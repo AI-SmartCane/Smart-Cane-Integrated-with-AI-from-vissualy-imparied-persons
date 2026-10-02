@@ -1,0 +1,42 @@
+{
+  "k-v-suresh": [
+    {
+      "file": "k-v-suresh-400.webp",
+      "width": 400,
+      "height": 500
+    },
+    {
+      "file": "k-v-suresh-800.webp",
+      "width": 800,
+      "height": 1000
+    }
+  ],
+  "sandesh-g-v": [
+    {
+      "file": "sandesh-g-v-160.webp",
+      "width": 160,
+      "height": 200
+    }
+  ],
+  "abhishek-kumar-singh": [
+    {
+      "file": "abhishek-kumar-singh-400.webp",
+      "width": 400,
+      "height": 500
+    }
+  ],
+  "avinash": [
+    {
+      "file": "avinash-400.webp",
+      "width": 400,
+      "height": 500
+    }
+  ],
+  "kartik-kumar-singh": [
+    {
+      "file": "kartik-kumar-singh-400.webp",
+      "width": 400,
+      "height": 500
+    }
+  ]
+}
