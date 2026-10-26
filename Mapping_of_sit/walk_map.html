@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b42f5ed7e2012918cf9864d90c284aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b42f5ed7e2012918cf9864d90c284aa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b42f5ed7e2012918cf9864d90c284aa = L.map(
+                "map_6b42f5ed7e2012918cf9864d90c284aa",
+                {
+                    center: [13.32720049519369, 77.12582108007938],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_99f3130948fe27e3fa9045e5deb3a92c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_99f3130948fe27e3fa9045e5deb3a92c.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var tile_layer_fb7e552c354d708045fb4d6241e55fb4 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "Esri World Imagery",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fb7e552c354d708045fb4d6241e55fb4.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        function geo_json_127a521228ec0089cc710fdb2e158427_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "fill": false, "weight": 3};
+            }
+        }
+
+        function geo_json_127a521228ec0089cc710fdb2e158427_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_127a521228ec0089cc710fdb2e158427 = L.geoJson(null, {
+                onEachFeature: geo_json_127a521228ec0089cc710fdb2e158427_onEachFeature,
+            
+                style: geo_json_127a521228ec0089cc710fdb2e158427_styler,
+            ...{
+}
+        });
+
+        function geo_json_127a521228ec0089cc710fdb2e158427_add (data) {
+            geo_json_127a521228ec0089cc710fdb2e158427
+                .addData(data);
+        }
+            geo_json_127a521228ec0089cc710fdb2e158427_add({"bbox": [77.1217488, 13.3245621, 77.1296371, 13.3318717], "features": [{"bbox": [77.1217488, 13.3245621, 77.1296371, 13.3318717], "geometry": {"coordinates": [[[77.1272188, 13.3318717], [77.1266461, 13.3304724], [77.1266128, 13.3302923], [77.1265107, 13.3299399], [77.1264527, 13.329755], [77.1264089, 13.3294698], [77.1263787, 13.3293391], [77.1260001, 13.327646], [77.1258646, 13.3276523], [77.1256576, 13.327662], [77.1245245, 13.3277151], [77.1217595, 13.3278444], [77.1217488, 13.3269988], [77.1272133, 13.3245621], [77.127127, 13.3248981], [77.1270446, 13.3251582], [77.1269404, 13.3254872], [77.1269332, 13.3257064], [77.1273842, 13.325606], [77.1274084, 13.3257967], [77.1283422, 13.3256755], [77.1292705, 13.3255434], [77.1293126, 13.325652], [77.1293665, 13.3259214], [77.1294878, 13.3258939], [77.1296371, 13.3264389], [77.1275558, 13.3267378], [77.1270086, 13.3268735], [77.1269375, 13.327552], [77.1269912, 13.3279254], [77.1269013, 13.3280428], [77.126959, 13.3289849], [77.1270274, 13.3297549], [77.1271749, 13.3305803], [77.1277309, 13.3304908], [77.1286495, 13.3303431], [77.1280693, 13.330933], [77.127372, 13.3316754], [77.1272188, 13.3318717]]], "type": "Polygon"}, "id": "0", "properties": {"name": "Siddaganga Institute of Technology", "osm_id": "236587837"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_127a521228ec0089cc710fdb2e158427.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        function geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "green", "fillOpacity": 0.2, "weight": 1};
+            }
+        }
+
+        function geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d = L.geoJson(null, {
+                onEachFeature: geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d_onEachFeature,
+            
+                style: geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d_styler,
+            ...{
+}
+        });
+
+        function geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d_add (data) {
+            geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d
+                .addData(data);
+        }
+            geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d_add({"bbox": [77.1218452, 13.3259877, 77.128067, 13.3314751], "features": [{"bbox": [77.1255042, 13.3267024, 77.1257257, 13.3270214], "geometry": {"coordinates": [[[77.1255042, 13.3270095], [77.1256589, 13.3270214], [77.1257257, 13.3268294], [77.1256893, 13.3267024], [77.1255466, 13.3267084], [77.1255042, 13.3270095]]], "type": "Polygon"}, "id": "0", "properties": {"area_m2": 647, "label": "Kho-Kho Court", "name": "Kho-Kho Court", "number": 1, "on_campus": true, "osm_id": "1124811797", "osm_name": null, "type": "pitch"}, "type": "Feature"}, {"bbox": [77.125558, 13.3259877, 77.1259748, 13.3263125], "geometry": {"coordinates": [[[77.1255941, 13.3263125], [77.125558, 13.3260386], [77.125955, 13.3259877], [77.1259748, 13.326302], [77.1255941, 13.3263125]]], "type": "Polygon"}, "id": "1", "properties": {"area_m2": 1382, "label": "Computer Science and Civil department Parking", "name": "Computer Science and Civil department Parking", "number": 2, "on_campus": true, "osm_id": "1124818212", "osm_name": null, "type": "parking"}, "type": "Feature"}, {"bbox": [77.124723, 13.3275933, 77.1256613, 13.3277067], "geometry": {"coordinates": [[[77.124723, 13.3277067], [77.1247287, 13.3276256], [77.1256613, 13.3275933], [77.1256576, 13.327662], [77.124723, 13.3277067]]], "type": "Polygon"}, "id": "2", "properties": {"area_m2": 836, "label": "Near Coffe shop and Bank gate Parking", "name": "Near Coffe shop and Bank gate Parking", "number": 3, "on_campus": true, "osm_id": "1124830814", "osm_name": null, "type": "parking"}, "type": "Feature"}, {"bbox": [77.1258617, 13.3275598, 77.1260581, 13.3276523], "geometry": {"coordinates": [[[77.1258646, 13.3276523], [77.1258617, 13.3275709], [77.1260581, 13.3275598], [77.1260543, 13.3276417], [77.1258646, 13.3276523]]], "type": "Polygon"}, "id": "3", "properties": {"area_m2": 189, "label": "Near Bank Gate Parking", "name": "Near Bank Gate Parking", "number": 4, "on_campus": true, "osm_id": "1124830815", "osm_name": null, "type": "parking"}, "type": "Feature"}, {"bbox": [77.1237705, 13.3276616, 77.1241622, 13.3277386], "geometry": {"coordinates": [[[77.1237705, 13.3277386], [77.1237718, 13.3276864], [77.1241622, 13.3276616], [77.1241545, 13.3277199], [77.1237705, 13.3277386]]], "type": "Polygon"}, "id": "4", "properties": {"area_m2": 255, "label": "Stadium Parking", "name": "Stadium Parking", "number": 5, "on_campus": true, "osm_id": "1124830816", "osm_name": null, "type": "parking"}, "type": "Feature"}, {"bbox": [77.1272615, 13.3311503, 77.1276441, 13.3314751], "geometry": {"coordinates": [[[77.127442, 13.3314259], [77.1276441, 13.3313013], [77.1275484, 13.3311503], [77.1275169, 13.3311597], [77.1272615, 13.3312363], [77.127359, 13.3314751], [77.127442, 13.3314259]]], "type": "Polygon"}, "id": "5", "properties": {"area_m2": 821, "label": "MBA Department Parking", "name": "MBA Department Parking", "number": 6, "on_campus": true, "osm_id": "1124901490", "osm_name": null, "type": "parking"}, "type": "Feature"}, {"bbox": [77.1264307, 13.3279736, 77.1268032, 13.3282617], "geometry": {"coordinates": [[[77.126497, 13.3282617], [77.1268032, 13.3282095], [77.1268032, 13.3279736], [77.1264307, 13.3280431], [77.126497, 13.3282617]]], "type": "Polygon"}, "id": "6", "properties": {"area_m2": 949, "label": "Temple", "name": "Temple", "number": 7, "on_campus": true, "osm_id": "1124901493", "osm_name": null, "type": "pitch"}, "type": "Feature"}, {"bbox": [77.1269591, 13.325998, 77.1273687, 13.3261648], "geometry": {"coordinates": [[[77.1269808, 13.3261648], [77.1273687, 13.3261244], [77.1273507, 13.325998], [77.1269591, 13.3260384], [77.1269808, 13.3261648]]], "type": "Polygon"}, "id": "7", "properties": {"area_m2": 600, "label": "Health Centre", "name": "Health Centre", "number": null, "on_campus": true, "osm_id": "1124901501", "osm_name": "Health Centre", "type": "area"}, "type": "Feature"}, {"bbox": [77.1269159, 13.3261471, 77.128067, 13.3266914], "geometry": {"coordinates": [[[77.1269772, 13.3266914], [77.128067, 13.3265861], [77.1280129, 13.3261471], [77.1269159, 13.3262876], [77.1269772, 13.3266914]]], "type": "Polygon"}, "id": "8", "properties": {"area_m2": 5611, "label": "A8", "name": null, "number": 8, "on_campus": true, "osm_id": "1124901504", "osm_name": null, "type": "park"}, "type": "Feature"}, {"bbox": [77.1263543, 13.3275938, 77.1268816, 13.3280105], "geometry": {"coordinates": [[[77.1268183, 13.3275938], [77.1268816, 13.327927], [77.1264176, 13.3280105], [77.1263543, 13.3276773], [77.1268183, 13.3275938]]], "type": "Polygon"}, "id": "12", "properties": {"area_m2": 1917, "label": "BBC court", "name": "BBC court", "number": 9, "on_campus": true, "osm_id": "822311021", "osm_name": null, "type": "pitch"}, "type": "Feature"}, {"bbox": [77.1218452, 13.3260617, 77.1241077, 13.3277451], "geometry": {"coordinates": [[[77.1241077, 13.3267554], [77.1240476, 13.3260617], [77.1218452, 13.3270537], [77.1218678, 13.3277451], [77.1234441, 13.3276721], [77.1235147, 13.3275745], [77.1239576, 13.3269627], [77.1241077, 13.3267554]]], "type": "Polygon"}, "id": "13", "properties": {"area_m2": 27312, "label": "Sri Shivakumara Swamiji Stadium", "name": "Sri Shivakumara Swamiji Stadium", "number": null, "on_campus": true, "osm_id": "822311023", "osm_name": "Sri Shivakumara Swamiji Stadium", "type": "stadium"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["label", "type", "area_m2", "osm_id"];
+    let aliases = ["label", "type", "area_m2", "osm_id"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        function geo_json_7795c8d12b24be7256f9e5cf04742123_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "orange", "weight": 3};
+            }
+        }
+
+        function geo_json_7795c8d12b24be7256f9e5cf04742123_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_7795c8d12b24be7256f9e5cf04742123 = L.geoJson(null, {
+                onEachFeature: geo_json_7795c8d12b24be7256f9e5cf04742123_onEachFeature,
+            
+                style: geo_json_7795c8d12b24be7256f9e5cf04742123_styler,
+            ...{
+}
+        });
+
+        function geo_json_7795c8d12b24be7256f9e5cf04742123_add (data) {
+            geo_json_7795c8d12b24be7256f9e5cf04742123
+                .addData(data);
+        }
+            geo_json_7795c8d12b24be7256f9e5cf04742123_add({"bbox": [77.1216349, 13.3254338, 77.1312557, 13.3328484], "features": [{"bbox": [77.1260029, 13.3271044, 77.126141, 13.327338], "geometry": {"coordinates": [[77.1261008, 13.3271044], [77.1260445, 13.3271331], [77.1260096, 13.3271775], [77.1260029, 13.3272271], [77.1260123, 13.3272662], [77.1260458, 13.3273027], [77.1260928, 13.3273301], [77.126141, 13.327338]], "type": "LineString"}, "id": "112", "properties": {"name": null, "on_campus": true, "osm_id": "797820777", "type": "service"}, "type": "Feature"}, {"bbox": [77.1246001, 13.3275171, 77.1262008, 13.3276172], "geometry": {"coordinates": [[77.1246001, 13.3276172], [77.1250443, 13.3275896], [77.1255401, 13.3275589], [77.1258105, 13.3275421], [77.1261042, 13.3275264], [77.1262008, 13.3275171]], "type": "LineString"}, "id": "113", "properties": {"name": null, "on_campus": true, "osm_id": "797820779", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1261008, 13.3271044, 77.1262644, 13.327338], "geometry": {"coordinates": [[77.126141, 13.327338], [77.1261947, 13.3273171], [77.1262349, 13.3272845], [77.1262591, 13.3272388], [77.1262644, 13.327201], [77.1262497, 13.3271566], [77.1262269, 13.3271344], [77.1261799, 13.3271096], [77.1261008, 13.3271044]], "type": "LineString"}, "id": "114", "properties": {"name": null, "on_campus": true, "osm_id": "797820780", "type": "service"}, "type": "Feature"}, {"bbox": [77.1276498, 13.3298931, 77.1287897, 13.3304751], "geometry": {"coordinates": [[77.1287897, 13.3303708], [77.1287414, 13.330329], [77.1286495, 13.3303431], [77.1282669, 13.3304016], [77.1277866, 13.3304751], [77.1277571, 13.3304725], [77.127741, 13.3304595], [77.1277009, 13.3302255], [77.1276498, 13.3298931]], "type": "LineString"}, "id": "116", "properties": {"name": null, "on_campus": true, "osm_id": "797820782", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1216349, 13.3276786, 77.121824, 13.3279252], "geometry": {"coordinates": [[77.121824, 13.3279252], [77.1217878, 13.3277099], [77.1217757, 13.3276929], [77.1217489, 13.3276851], [77.1216349, 13.3276786]], "type": "LineString"}, "id": "204", "properties": {"name": null, "on_campus": true, "osm_id": "797857098", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1262008, 13.3259956, 77.1270275, 13.3275171], "geometry": {"coordinates": [[77.1262008, 13.3275171], [77.1266627, 13.3274758], [77.1270275, 13.3274434], [77.126968, 13.3270018], [77.1269341, 13.3267504], [77.1268901, 13.3264237], [77.1268677, 13.3262578], [77.1268324, 13.3259956]], "type": "LineString"}, "id": "294", "properties": {"name": null, "on_campus": true, "osm_id": "1072629908", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1269341, 13.3264121, 77.1296046, 13.3267504], "geometry": {"coordinates": [[77.1269341, 13.3267504], [77.1275752, 13.3266856], [77.1281149, 13.3266311], [77.1296046, 13.3264121]], "type": "LineString"}, "id": "295", "properties": {"name": null, "on_campus": true, "osm_id": "1072629909", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1249948, 13.3264237, 77.1268901, 13.3275896], "geometry": {"coordinates": [[77.1268901, 13.3264237], [77.1264131, 13.3264792], [77.1261023, 13.3265154], [77.1259347, 13.3265349], [77.1255101, 13.3265843], [77.1253536, 13.3266025], [77.1249948, 13.3266443], [77.1249961, 13.3266682], [77.125006, 13.3268581], [77.1250443, 13.3275896]], "type": "LineString"}, "id": "296", "properties": {"name": null, "on_campus": true, "osm_id": "1072629910", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1260518, 13.3254338, 77.1268324, 13.3265154], "geometry": {"coordinates": [[77.1261023, 13.3265154], [77.126069, 13.3260845], [77.1260544, 13.3258946], [77.1260518, 13.325861], [77.1263283, 13.3255762], [77.1265153, 13.3254338], [77.1267755, 13.3256474], [77.1268024, 13.3258123], [77.1268324, 13.3259956]], "type": "LineString"}, "id": "297", "properties": {"name": null, "on_campus": true, "osm_id": "1072629911", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1255052, 13.3265349, 77.1259562, 13.3272032], "geometry": {"coordinates": [[77.1259347, 13.3265349], [77.1259537, 13.3267289], [77.1259562, 13.3267543], [77.125894, 13.3269064], [77.1257605, 13.3270703], [77.1255914, 13.3271583], [77.1255052, 13.3272032]], "type": "LineString"}, "id": "298", "properties": {"name": null, "on_campus": true, "osm_id": "1124811787", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1255052, 13.3272032, 77.1255401, 13.3275589], "geometry": {"coordinates": [[77.1255052, 13.3272032], [77.1255401, 13.3275589]], "type": "LineString"}, "id": "299", "properties": {"name": null, "on_campus": true, "osm_id": "1124811788", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1259537, 13.3267216, 77.1260427, 13.3267289], "geometry": {"coordinates": [[77.1259537, 13.3267289], [77.1260427, 13.3267216]], "type": "LineString"}, "id": "300", "properties": {"name": null, "on_campus": true, "osm_id": "1124811789", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1257605, 13.3267163, 77.1261311, 13.3270703], "geometry": {"coordinates": [[77.1260427, 13.3267216], [77.1261058, 13.3267163], [77.1261311, 13.3268831], [77.1258785, 13.3270693], [77.1257605, 13.3270703]], "type": "LineString"}, "id": "301", "properties": {"name": null, "on_campus": true, "osm_id": "1124811790", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1261311, 13.3268831, 77.1266627, 13.3274758], "geometry": {"coordinates": [[77.1261311, 13.3268831], [77.1264768, 13.3270392], [77.1266038, 13.3271167], [77.1266627, 13.3274758]], "type": "LineString"}, "id": "302", "properties": {"name": null, "on_campus": true, "osm_id": "1124811791", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1266038, 13.3270018, 77.126968, 13.3271167], "geometry": {"coordinates": [[77.1266038, 13.3271167], [77.126774, 13.3270359], [77.126968, 13.3270018]], "type": "LineString"}, "id": "303", "properties": {"name": null, "on_campus": true, "osm_id": "1124811792", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1264131, 13.3264792, 77.1264768, 13.3270392], "geometry": {"coordinates": [[77.1264768, 13.3270392], [77.1264131, 13.3264792]], "type": "LineString"}, "id": "304", "properties": {"name": null, "on_campus": true, "osm_id": "1124811793", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1255914, 13.3271583, 77.1258105, 13.3275421], "geometry": {"coordinates": [[77.1255914, 13.3271583], [77.125687, 13.327247], [77.1256589, 13.3272842], [77.1257099, 13.3273413], [77.1257763, 13.3273512], [77.1258105, 13.3275421]], "type": "LineString"}, "id": "305", "properties": {"name": null, "on_campus": true, "osm_id": "1124811794", "type": "footway"}, "type": "Feature"}, {"bbox": [77.125687, 13.3272395, 77.1258222, 13.3273512], "geometry": {"coordinates": [[77.1257763, 13.3273512], [77.1258222, 13.3273115], [77.1257814, 13.3272395], [77.125687, 13.327247]], "type": "LineString"}, "id": "306", "properties": {"name": null, "on_campus": true, "osm_id": "1124811795", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1261008, 13.3268831, 77.126134, 13.3271044], "geometry": {"coordinates": [[77.1261008, 13.3271044], [77.126134, 13.3269787], [77.1261311, 13.3268831]], "type": "LineString"}, "id": "307", "properties": {"name": null, "on_campus": true, "osm_id": "1124818204", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1260544, 13.3258123, 77.1268024, 13.3258946], "geometry": {"coordinates": [[77.1260544, 13.3258946], [77.1268024, 13.3258123]], "type": "LineString"}, "id": "308", "properties": {"name": null, "on_campus": true, "osm_id": "1124818207", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1249187, 13.325861, 77.1260518, 13.3266682], "geometry": {"coordinates": [[77.1260518, 13.325861], [77.1254849, 13.3259391], [77.1249187, 13.3260172], [77.1249403, 13.3261986], [77.1249539, 13.3263133], [77.1249664, 13.3264188], [77.1249961, 13.3266682]], "type": "LineString"}, "id": "309", "properties": {"name": null, "on_campus": true, "osm_id": "1124818208", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1249403, 13.3260845, 77.126069, 13.3261986], "geometry": {"coordinates": [[77.126069, 13.3260845], [77.1255133, 13.3261289], [77.1249403, 13.3261986]], "type": "LineString"}, "id": "310", "properties": {"name": null, "on_campus": true, "osm_id": "1124818209", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1254801, 13.3261289, 77.1255413, 13.3265843], "geometry": {"coordinates": [[77.1255133, 13.3261289], [77.1255413, 13.3263176], [77.1254801, 13.3263325], [77.1255101, 13.3265843]], "type": "LineString"}, "id": "311", "properties": {"name": null, "on_campus": true, "osm_id": "1124818210", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1253536, 13.3266025, 77.1255052, 13.3272032], "geometry": {"coordinates": [[77.1255052, 13.3272032], [77.1253536, 13.3266025]], "type": "LineString"}, "id": "312", "properties": {"name": null, "on_campus": true, "osm_id": "1124818213", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1237606, 13.3276172, 77.1246001, 13.3276608], "geometry": {"coordinates": [[77.1246001, 13.3276172], [77.1245137, 13.3276217], [77.1241489, 13.3276407], [77.1237606, 13.3276608]], "type": "LineString"}, "id": "313", "properties": {"name": null, "on_campus": true, "osm_id": "1124830813", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1235147, 13.3275745, 77.1237606, 13.3276608], "geometry": {"coordinates": [[77.1237606, 13.3276608], [77.1236493, 13.3276275], [77.1235147, 13.3275745]], "type": "LineString"}, "id": "314", "properties": {"name": null, "on_campus": true, "osm_id": "1124830817", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1240542, 13.327166, 77.1241489, 13.3276407], "geometry": {"coordinates": [[77.1241489, 13.3276407], [77.1240542, 13.3274554], [77.1241149, 13.327166]], "type": "LineString"}, "id": "315", "properties": {"name": null, "on_campus": true, "osm_id": "1124830818", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1239576, 13.3269627, 77.1241223, 13.327166], "geometry": {"coordinates": [[77.1241149, 13.327166], [77.1241223, 13.3270864], [77.1239576, 13.3269627]], "type": "LineString"}, "id": "316", "properties": {"name": null, "on_campus": true, "osm_id": "1124830819", "type": "footway"}, "type": "Feature"}, {"bbox": [77.124126, 13.3263133, 77.1249539, 13.3263768], "geometry": {"coordinates": [[77.1249539, 13.3263133], [77.124126, 13.3263768]], "type": "LineString"}, "id": "317", "properties": {"name": null, "on_campus": true, "osm_id": "1124830820", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1246261, 13.3260172, 77.1249187, 13.3260362], "geometry": {"coordinates": [[77.1249187, 13.3260172], [77.1246261, 13.3260362]], "type": "LineString"}, "id": "318", "properties": {"name": null, "on_campus": true, "osm_id": "1124830821", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1245137, 13.3276217, 77.1245312, 13.3277723], "geometry": {"coordinates": [[77.1245312, 13.3277723], [77.1245245, 13.3277151], [77.1245137, 13.3276217]], "type": "LineString"}, "id": "319", "properties": {"name": null, "on_campus": true, "osm_id": "1124830827", "type": "residential"}, "type": "Feature"}, {"bbox": [77.1239576, 13.326877, 77.1247619, 13.3269627], "geometry": {"coordinates": [[77.1247619, 13.326877], [77.1246658, 13.3268862], [77.1241888, 13.3269318], [77.1239576, 13.3269627]], "type": "LineString"}, "id": "320", "properties": {"name": null, "on_campus": true, "osm_id": "1124901483", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1247619, 13.3268581, 77.125006, 13.326877], "geometry": {"coordinates": [[77.1247619, 13.326877], [77.125006, 13.3268581]], "type": "LineString"}, "id": "321", "properties": {"name": null, "on_campus": true, "osm_id": "1124901484", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1246321, 13.3264188, 77.1249664, 13.3268862], "geometry": {"coordinates": [[77.1249664, 13.3264188], [77.1247638, 13.3264314], [77.1246321, 13.3265174], [77.1246658, 13.3268862]], "type": "LineString"}, "id": "322", "properties": {"name": null, "on_campus": true, "osm_id": "1124901485", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1254849, 13.3259391, 77.1255133, 13.3261289], "geometry": {"coordinates": [[77.1255133, 13.3261289], [77.1254849, 13.3259391]], "type": "LineString"}, "id": "323", "properties": {"name": null, "on_campus": true, "osm_id": "1124901486", "type": "footway"}, "type": "Feature"}, {"bbox": [77.127372, 13.3316754, 77.1273886, 13.3317218], "geometry": {"coordinates": [[77.127372, 13.3316754], [77.1273886, 13.3317218]], "type": "LineString"}, "id": "324", "properties": {"name": null, "on_campus": true, "osm_id": "1124901487", "type": "service"}, "type": "Feature"}, {"bbox": [77.1274227, 13.3304016, 77.1283151, 13.3311081], "geometry": {"coordinates": [[77.1274943, 13.3311081], [77.1274227, 13.3309736], [77.1276754, 13.3308544], [77.1278948, 13.3307799], [77.1278604, 13.330703], [77.1280875, 13.3306247], [77.1282163, 13.3306148], [77.1283151, 13.330533], [77.1282669, 13.3304016]], "type": "LineString"}, "id": "325", "properties": {"name": null, "on_campus": true, "osm_id": "1124901492", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1268212, 13.3259596, 77.127305, 13.3259941], "geometry": {"coordinates": [[77.1268212, 13.3259941], [77.127305, 13.3259596]], "type": "LineString"}, "id": "326", "properties": {"name": null, "on_campus": true, "osm_id": "1124901500", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1268677, 13.3261807, 77.1275752, 13.3266856], "geometry": {"coordinates": [[77.1268677, 13.3262578], [77.1275686, 13.3261807], [77.1275752, 13.3266856]], "type": "LineString"}, "id": "327", "properties": {"name": null, "on_campus": true, "osm_id": "1124901502", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1275686, 13.3260951, 77.1281149, 13.3266311], "geometry": {"coordinates": [[77.1275686, 13.3261807], [77.1280535, 13.3260951], [77.1281149, 13.3266311]], "type": "LineString"}, "id": "328", "properties": {"name": null, "on_campus": true, "osm_id": "1124901503", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1257936, 13.3275421, 77.1258105, 13.3277005], "geometry": {"coordinates": [[77.1258105, 13.3275421], [77.1257941, 13.3276312], [77.1257936, 13.3277005]], "type": "LineString"}, "id": "329", "properties": {"name": null, "on_campus": true, "osm_id": "1124901507", "type": "footway"}, "type": "Feature"}, {"bbox": [77.1257576, 13.3294625, 77.1312557, 13.3328484], "geometry": {"coordinates": [[77.1312557, 13.3295992], [77.1309234, 13.3295173], [77.1306284, 13.3294625], [77.1303682, 13.3294716], [77.1301161, 13.3294977], [77.1298157, 13.3295747], [77.1297473, 13.3296008], [77.129534, 13.3296935], [77.1293087, 13.3298944], [77.1287897, 13.3303708], [77.1282211, 13.3309149], [77.1277879, 13.3313325], [77.1273886, 13.3317218], [77.1273157, 13.3317901], [77.1272188, 13.3318717], [77.1270704, 13.3319967], [77.1266973, 13.3322634], [77.1260405, 13.332674], [77.1257576, 13.3328484]], "type": "LineString"}, "id": "330", "properties": {"name": "Bengaluru Honnavara Road", "on_campus": true, "osm_id": "1132276363", "type": "primary"}, "type": "Feature"}, {"bbox": [77.1274943, 13.3311081, 77.1275169, 13.3311597], "geometry": {"coordinates": [[77.1274943, 13.3311081], [77.1275169, 13.3311597]], "type": "LineString"}, "id": "334", "properties": {"name": null, "on_campus": true, "osm_id": "1188908410", "type": "service"}, "type": "Feature"}, {"bbox": [77.1267191, 13.3308144, 77.1272188, 13.3318717], "geometry": {"coordinates": [[77.1272188, 13.3318717], [77.1269804, 13.3313208], [77.1267795, 13.3308566], [77.1267666, 13.3308356], [77.1267441, 13.3308223], [77.1267191, 13.3308144]], "type": "LineString"}, "id": "343", "properties": {"name": null, "on_campus": true, "osm_id": "1283209113", "type": "residential"}, "type": "Feature"}, {"bbox": [77.126141, 13.327338, 77.127372, 13.3316754], "geometry": {"coordinates": [[77.126141, 13.327338], [77.1262008, 13.3275171], [77.1262592, 13.3276921], [77.1267683, 13.3297717], [77.127372, 13.3316754]], "type": "LineString"}, "id": "344", "properties": {"name": null, "on_campus": true, "osm_id": "1466481203", "type": "residential"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_7795c8d12b24be7256f9e5cf04742123.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["type", "osm_id"];
+    let aliases = ["type", "osm_id"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_7795c8d12b24be7256f9e5cf04742123.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        function geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb_styler(feature) {
+            switch(feature.id) {
+                case "0": case "1": case "2": case "3": case "4": case "5": case "6": case "7": case "8": case "9": case "10": case "11": case "15": case "16": case "17": case "18": case "45": case "46": case "47": case "2058": case "2059": case "2061": case "2062": case "2063": case "2064": case "2065": case "2066": case "2067": 
+                    return {"color": "blue", "fillOpacity": 0.5, "weight": 1};
+                default:
+                    return {"color": "gray", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb = L.geoJson(null, {
+                onEachFeature: geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb_onEachFeature,
+            
+                style: geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb_styler,
+            ...{
+}
+        });
+
+        function geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb_add (data) {
+            geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb
+                .addData(data);
+        }
+            geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb_add({"bbox": [77.1236418, 13.3248801, 77.129582, 13.3311299], "features": [{"bbox": [77.1264904, 13.3265489, 77.1267908, 13.327042], "geometry": {"coordinates": [[[77.1265329, 13.327042], [77.1264904, 13.3265696], [77.1267483, 13.3265489], [77.1267908, 13.3270036], [77.1265329, 13.327042]]], "type": "Polygon"}, "id": "0", "properties": {"area_m2": 1449, "is_drawn": false, "label": "Birla Auditorium", "name": "Birla Auditorium", "number": null, "on_campus": true, "osm_id": "1124811796", "osm_name": "Birla Auditorium", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1252189, 13.3269614, 77.1254344, 13.3273934], "geometry": {"coordinates": [[[77.1252584, 13.3273934], [77.1254344, 13.3273905], [77.1253919, 13.3271572], [77.12533, 13.3269614], [77.1252189, 13.3269859], [77.1252584, 13.3273934]]], "type": "Polygon"}, "id": "1", "properties": {"area_m2": 769, "is_drawn": false, "label": "KC Library", "name": "KC Library", "number": null, "on_campus": true, "osm_id": "1124811798", "osm_name": "KC Library", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1261714, 13.326234, 77.1267336, 13.3264386], "geometry": {"coordinates": [[[77.1261886, 13.3264386], [77.1261714, 13.3262841], [77.1267057, 13.326234], [77.1267336, 13.3263885], [77.1261886, 13.3264386]]], "type": "Polygon"}, "id": "2", "properties": {"area_m2": 1013, "is_drawn": false, "label": "Chemistry Block", "name": "Chemistry Block", "number": null, "on_campus": true, "osm_id": "1124818205", "osm_name": "Chemistry Block", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1262282, 13.3256461, 77.1264879, 13.3258445], "geometry": {"coordinates": [[[77.1263162, 13.3258445], [77.1262282, 13.3257839], [77.1262862, 13.3256649], [77.1263849, 13.3256461], [77.1264879, 13.3257296], [77.1264235, 13.3258361], [77.1263162, 13.3258445]]], "type": "Polygon"}, "id": "3", "properties": {"area_m2": 416, "is_drawn": false, "label": "Media Centre", "name": "Media Centre", "number": null, "on_campus": true, "osm_id": "1124818206", "osm_name": "Media Centre", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1255238, 13.3263371, 77.1260344, 13.326532], "geometry": {"coordinates": [[[77.1255346, 13.3265039], [77.1255238, 13.3263617], [77.1260308, 13.3263371], [77.1260344, 13.3265004], [77.1255328, 13.326532], [77.1255346, 13.3265039]]], "type": "Polygon"}, "id": "4", "properties": {"area_m2": 1008, "is_drawn": false, "label": "Civil Block", "name": "Civil Block", "number": null, "on_campus": true, "osm_id": "1124818211", "osm_name": "Civil Block", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1242675, 13.3257879, 77.1249425, 13.3260784], "geometry": {"coordinates": [[[77.1242791, 13.3260784], [77.1245827, 13.3260362], [77.1245853, 13.3259642], [77.1249425, 13.3259071], [77.1249349, 13.3257879], [77.1245827, 13.3258251], [77.1244759, 13.3258444], [77.1244656, 13.3258808], [77.1243825, 13.3258895], [77.1243755, 13.325923], [77.1242675, 13.3259345], [77.1242791, 13.3260784]]], "type": "Polygon"}, "id": "5", "properties": {"area_m2": 1208, "is_drawn": false, "label": "ECE Block", "name": "ECE Block", "number": null, "on_campus": true, "osm_id": "1124830822", "osm_name": "Dept. Of Electronics \u0026 Communication", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1249721, 13.3260073, 77.1254592, 13.3261619], "geometry": {"coordinates": [[[77.1249793, 13.3261619], [77.1254592, 13.3261092], [77.1254412, 13.3260073], [77.1249721, 13.3260319], [77.1249793, 13.3261619]]], "type": "Polygon"}, "id": "6", "properties": {"area_m2": 666, "is_drawn": false, "label": "Amenities Block", "name": "Amenities Block", "number": null, "on_campus": true, "osm_id": "1124830823", "osm_name": "Aminities", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1249576, 13.3256931, 77.125194, 13.3259652], "geometry": {"coordinates": [[[77.1249666, 13.3259652], [77.1249576, 13.3257703], [77.1251471, 13.3256931], [77.125194, 13.3259547], [77.1249666, 13.3259652]]], "type": "Polygon"}, "id": "7", "properties": {"area_m2": 585, "is_drawn": false, "label": "Bio Centre", "name": "Bio Centre", "number": null, "on_campus": true, "osm_id": "1124830824", "osm_name": "Bio Centre", "type": "yes"}, "type": "Feature"}, {"bbox": [77.12412021801961, 13.326370948393004, 77.12490106314229, 13.327240960617438], "geometry": {"coordinates": [[[[77.12420901088873, 13.32653500046759], [77.12420904211129, 13.326534784764528], [77.12420964463519, 13.32653170519824], [77.12420977142348, 13.326530824649824], [77.12420980921988, 13.326529936161446], [77.1242097576584, 13.326529048337127], [77.12420961723834, 13.326528169774459], [77.12420938931952, 13.326527308981342], [77.12420907610908, 13.326526474293596], [77.12420868064011, 13.326525673794242], [77.1242082067423, 13.326524915235233], [77.12420765900481, 13.32652420596236], [77.12420704273187, 13.326523552844137], [77.1242063638914, 13.32652296220529], [77.1242056290572, 13.3265224397655], [77.12420484534535, 13.326521990584013], [77.1242040203452, 13.326521619010647], [77.12420316204597, 13.326521328643686], [77.12420227875931, 13.326521122294999], [77.12420137903891, 13.326521001962849], [77.12420047159752, 13.326520968812519], [77.12419956522272, 13.326521023165032], [77.12412842690452, 13.326528744276391], [77.12412755376717, 13.32652888078131], [77.12412669797924, 13.32652909849534], [77.12412586739798, 13.326529395419593], [77.12412506964915, 13.326529768827909], [77.12412431205718, 13.326530215291928], [77.1241236015777, 13.326530730712534], [77.12412294473381, 13.326531310357495], [77.12412234755622, 13.326531948904936], [77.12412181552777, 13.326532640492152], [77.1241213535332, 13.326533378769488], [77.12412096581417, 13.32653415695861], [77.12412065593048, 13.326534967914727], [77.12412042672726, 13.326535804192229], [77.12412028030886, 13.326536658113], [77.12412021801961, 13.326537521836947], [77.12412024043142, 13.32653838743398], [77.1241203473385, 13.326539246956784], [77.1241887999024, 13.326931799440269], [77.12423259423333, 13.327183132404588], [77.12423279005439, 13.327183997775446], [77.12423307150621, 13.327184840196725], [77.12423343588098, 13.32718565156357], [77.12423387967306, 13.327186424069872], [77.12423439861276, 13.327187150283407], [77.12423498770741, 13.327187823217333], [77.12423564128936, 13.327188436397401], [77.12423635307059, 13.327188983924254], [77.12423711620305, 13.327189460530182], [77.12423792334474, 13.327189861629785], [77.1242387667302, 13.327190183364127], [77.12423963824529, 13.327190422637813], [77.12424052950522, 13.327190577148821], [77.12424143193523, 13.327190645410601], [77.12424233685313, 13.327190626766424], [77.12461917762101, 13.327164715290888], [77.12461939159732, 13.327164710723537], [77.12461944247057, 13.327164914308874], [77.12463306464758, 13.327233652534105], [77.12463327413289, 13.327234492483246], [77.12463356463401, 13.327235308981287], [77.12463393349138, 13.327236094553122], [77.12463437732809, 13.32723684200678], [77.12463489208078, 13.327237544499264], [77.12463547303682, 13.327238195599207], [77.12463611487753, 13.32723878934573], [77.12463681172684, 13.32723932030304], [77.12463755720499, 13.327239783610183], [77.12463834448711, 13.32724017502554], [77.12463916636554, 13.327240490965682], [77.12464001531593, 13.327240728538143], [77.12464088356609, 13.327240885567939], [77.12464176316709, 13.327240960617438], [77.12464264606614, 13.327240952999563], [77.1248382948936, 13.327230083620513], [77.12483922062623, 13.327229986117885], [77.12484013161335, 13.327229797758134], [77.12484101858055, 13.327229520458884], [77.12484187249802, 13.327229157043186], [77.12484268467237, 13.327228711210836], [77.12484344683519, 13.32722818750066], [77.12484415122722, 13.327227591244332], [77.12484479067736, 13.32722692851209], [77.12484535867563, 13.327226206050929], [77.12484584943947, 13.327225431215926], [77.1248462579726, 13.327224611895344], [77.12484658011597, 13.327223756430353], [77.12484681258994, 13.327222873530074], [77.1248469530278, 13.327221972182942], [77.1248469999998, 13.327221061565197], [77.12484699999999, 13.327147117460905], [77.12484701033436, 13.327146907310176], [77.12484721081161, 13.327146831659999], [77.12489473664391, 13.327131424934873], [77.12489555403043, 13.32713111709092], [77.12489633793575, 13.327130734752998], [77.12489708129942, 13.327130281364747], [77.12489777742614, 13.327129761009717], [77.12489842004607, 13.32712917837463], [77.12489900337124, 13.327128538707147], [77.12489952214781, 13.327127847768606], [77.12489997170329, 13.327127111782122], [77.12490034798861, 13.327126337376571], [77.12490064761465, 13.32712553152683], [77.12490086788279, 13.327124701491005], [77.1249010068091, 13.327123854745032], [77.12490106314229, 13.327122998915362], [77.12490103637501, 13.327122141710248], [77.12487994650435, 13.326858032145244], [77.12487983398852, 13.326857165176532], [77.12487963647891, 13.326856312905967], [77.12487935582284, 13.32685548330497], [77.12487899464537, 13.326854684132963], [77.12487855632466, 13.326853922864732], [77.12487804496037, 13.32685320662056], [77.12487746533542, 13.326852542099598], [77.1248768228711, 13.326851935517235], [77.12487612357653, 13.326851392546942], [77.12487537399231, 13.32685091826721], [77.12487458112945, 13.326850517114066], [77.12487375240374, 13.326850192839569], [77.12487289556638, 13.32684994847671], [77.12487201863154, 13.326849786311062], [77.12487112980132, 13.326849707859383], [77.12487023738915, 13.326849713855454], [77.12486934974187, 13.326849804243187], [77.12486847516183, 13.326849978177172], [77.12486762182913, 13.326850234030573], [77.12486679772512, 13.32685056941035], [77.12486601055781, 13.326850981179636], [77.12486599669197, 13.326850989300274], [77.12486577388171, 13.326851000000042], [77.12477323133166, 13.326851000000042], [77.1247730069244, 13.326850988974812], [77.1247728956486, 13.326850797819192], [77.12475710727915, 13.326820207853384], [77.12475701223957, 13.326819997441286], [77.12475701125646, 13.32681976736647], [77.12475995918764, 13.326758843454856], [77.12475995984346, 13.326758001803226], [77.12475988053458, 13.326757163742414], [77.12475204444375, 13.32670231110645], [77.12475199999999, 13.326701685863933], [77.124752, 13.326651157975784], [77.12475199436145, 13.32665084212075], [77.12475000626024, 13.326595175286853], [77.12474998679872, 13.326594825083015], [77.12474648633857, 13.326548443988521], [77.1247463795489, 13.326547587682391], [77.12474618986492, 13.326546745250198], [77.12474591901531, 13.326545924369368], [77.12474556946844, 13.32654513252093], [77.12474514440989, 13.326544376921325], [77.12474464771336, 13.32654366445665], [77.12474408390547, 13.326543001619886], [77.12474345812443, 13.326542394451737], [77.12474277607323, 13.32654184848558], [77.12474204396771, 13.326541368697024], [77.12474126847985, 13.326540959458589], [77.12474045667697, 13.326540624499826], [77.12473961595738, 13.32654036687336], [77.12470414689082, 13.326531293390786], [77.12470337892611, 13.326531130790967], [77.12470259962038, 13.326531032757185], [77.12470181462349, 13.32653100000017], [77.124627, 13.326530999999996], [77.12456794815256, 13.32653100000011], [77.12456700496581, 13.326531047327784], [77.12456607165869, 13.326531188815292], [77.12450830385268, 13.326542938199495], [77.12450769042972, 13.326543021349709], [77.12445057672342, 13.326546960226038], [77.12444943285624, 13.32654710995656], [77.12435203883554, 13.32656599247067], [77.12435196103826, 13.326566006875607], [77.12428405627608, 13.326577990068936], [77.12428394348987, 13.32657800856214], [77.12425117500088, 13.326582973484728], [77.12425099947869, 13.32658299336141], [77.12425082291686, 13.326583000000014], [77.12421422599267, 13.326583000000015], [77.1242140095796, 13.326582989613236], [77.12421397706584, 13.326582779832078], [77.12420902271032, 13.326535218019139], [77.12420901088873, 13.32653500046759]], [[77.12448301118634, 13.32660800960528], [77.12448322530349, 13.326607984979779], [77.12451278326358, 13.326606014449103], [77.12451321716364, 13.326606005568314], [77.12455168179514, 13.326606991840919], [77.1245523140374, 13.326607050925007], [77.12458877076827, 13.326612962827307], [77.12458898962402, 13.326613009506936], [77.12458902264561, 13.326613226456073], [77.12459297804759, 13.326652780475921], [77.124593, 13.326653220574174], [77.124593, 13.326693772411181], [77.12459298881704, 13.326693989686815], [77.12459276801421, 13.326694013646254], [77.12452502900346, 13.326697998293916], [77.12448722014894, 13.32669998841219], [77.12448701003642, 13.326699989629121], [77.124487, 13.326699784079416], [77.124487, 13.326677232722973], [77.12448698776765, 13.326676767585498], [77.12448500275494, 13.32663905234353], [77.12448499662527, 13.326638947691427], [77.1244830142391, 13.326608220706182], [77.12448301118634, 13.32660800960528]]], [[[77.12475976641696, 13.32637624431776], [77.12475886619517, 13.326376353980354], [77.12475798131892, 13.326376549673741], [77.12475712034006, 13.326376829506659], [77.12475629157949, 13.32637719077466], [77.1247555030467, 13.326377629986304], [77.12475476236244, 13.326378142896841], [77.12475407668501, 13.326378724549283], [77.12475345264113, 13.32637936932227], [77.1247528962618, 13.326380070984426], [77.12475241292415, 13.326380822754581], [77.12475200729938, 13.326381617367275], [77.12475168330761, 13.326382447143017], [77.12475144408005, 13.32638330406249], [77.1247512919287, 13.326384179844025], [77.12475122832404, 13.326385066023676], [77.12475125388076, 13.326385954037006], [77.12475136835188, 13.326386835301854], [77.12475157063108, 13.326387701301275], [77.12475185876346, 13.326388543665862], [77.12475222996439, 13.326389354254617], [77.12475268064637, 13.326390125233651], [77.12475320645386, 13.326390849151872], [77.1247538023052, 13.326391519013004], [77.1247544624418, 13.326392128343208], [77.12475518048382, 13.326392671253645], [77.12475594949176, 13.326393142497375], [77.1247567620336, 13.326393537520092], [77.12475761025655, 13.326393852504115], [77.12475848596301, 13.326394084405297], [77.12475938068977, 13.32639423098244], [77.12476028578973, 13.326394290818955], [77.12479990366742, 13.326394998279786], [77.12480009617522, 13.326395005657375], [77.1248325959593, 13.326396917410573], [77.12483352309236, 13.32639692625054], [77.1248344464513, 13.326396843935344], [77.12483535671416, 13.326396671296019], [77.12483624469122, 13.32639641007547], [77.12483710141782, 13.326396062910888], [77.12483791824471, 13.326395633307135], [77.1248386869255, 13.326395125601334], [77.12483939969982, 13.32639454491912], [77.12484004937178, 13.326393897122855], [77.12484062938249, 13.326393188752483], [77.12484113387636, 13.32639242695945], [77.12484155776022, 13.326391619434576], [77.12484189675463, 13.326390774330346], [77.12484214743728, 13.326389900178649], [77.12484230727735, 13.326389005804618], [77.12484237466111, 13.326388100237557], [77.1248423489083, 13.326387192619752], [77.12484171691065, 13.326379278000758], [77.12484160244811, 13.326378400271073], [77.12484140087423, 13.326377537712126], [77.12484111412172, 13.326376698594368], [77.12484074494007, 13.326375890963494], [77.12484029686907, 13.3263751225633], [77.12483977420499, 13.326374400761418], [77.12483918195923, 13.326373732478684], [77.12483852581045, 13.326373124122789], [77.12483781204998, 13.326372581526806], [77.12483704752155, 13.326372109893308], [77.12483623955566, 13.326371713744445], [77.12483539589934, 13.326371396878598], [77.12483452464177, 13.326371162333968], [77.12483363413683, 13.326371012359441], [77.12483273292294, 13.326370948393004], [77.12483182964115, 13.326370971047993], [77.12475976641696, 13.32637624431776]]], [[[77.12459408624186, 13.326388367986528], [77.12459319878056, 13.326388475474772], [77.12459232611037, 13.326388666577985], [77.12459147642632, 13.326388939501568], [77.1245906577076, 13.326389291682556], [77.12458987764259, 13.326389719813696], [77.12458914355673, 13.326390219874511], [77.12458846234364, 13.326390787169043], [77.12458784040042, 13.326391416369962], [77.12458728356762, 13.326392101568585], [77.12458679707431, 13.32639283633037], [77.12458638548905, 13.326393613755345], [77.12458605267695, 13.326394426542883], [77.12458580176335, 13.326395267060287], [77.12458563510454, 13.326396127414448], [77.12458555426556, 13.326396999525983], [77.12458556000557, 13.326397875205092], [77.12458565227065, 13.326398746228474], [77.12458583019439, 13.326399604416544], [77.1245860921059, 13.326400441710263], [77.12458643554568, 13.326401250246791], [77.12458685728855, 13.32640202243335], [77.124587353374, 13.326402751018511], [77.12458791914342, 13.326403429160305], [77.12458854928381, 13.326404050490444], [77.12458923787767, 13.326404609174178], [77.12458997845854, 13.326405099965024], [77.12459076407183, 13.326405518254074], [77.12459158734, 13.326405860113283], [77.12459244053196, 13.32640612233232], [77.12459331563554, 13.326406302448753], [77.12459420443287, 13.326406398771148], [77.12459509857744, 13.326406410394965], [77.12460640189711, 13.326406020624304], [77.124607590372, 13.326405903892981], [77.12461247062951, 13.326405109432821], [77.12461335788419, 13.326404920652505], [77.12461422189905, 13.32640464739758], [77.12461505430923, 13.326404292313535], [77.12461584705586, 13.326403858838082], [77.124616592464, 13.326403351167873], [77.1246172833171, 13.326402774217863], [77.1246179129267, 13.326402133573735], [77.12461847519731, 13.326401435437822], [77.12461896468538, 13.326400686569055], [77.12461937665196, 13.326399894217529], [77.12461970710866, 13.326399066054318], [77.1246199528562, 13.326398210097196], [77.12462011151536, 13.326397334633032], [77.12462018155014, 13.326396448137531], [77.1246201622825, 13.326395559193225], [77.12462005389897, 13.32639467640632], [77.12461985744883, 13.326393808323441], [77.12461957483404, 13.326392963348836], [77.1246192087907, 13.326392149663041], [77.1246187628626, 13.326391375143677], [77.12461824136695, 13.326390647289166], [77.12461764935256, 13.32638997314616], [77.12461699255095, 13.326389359241302], [77.12461627732091, 13.32638881151806], [77.12461551058685, 13.326388335279148], [77.1246146997718, 13.32638793513523], [77.12461385272562, 13.326387614960256], [77.12461297764888, 13.326387377853965], [77.12461208301353, 13.326387226111885], [77.12461117748093, 13.326387161203089], [77.12461026981788, 13.326387183755978], [77.12459408624186, 13.326388367986528]]], [[[77.12431784897886, 13.32640858144413], [77.12431695570837, 13.326408689918727], [77.12431607747959, 13.326408883103818], [77.12431522264875, 13.326409159161276], [77.12431439934946, 13.32640951546445], [77.1243136154153, 13.326409948623173], [77.12431287830526, 13.326410454515997], [77.12431219503289, 13.326411028329419], [77.12431157209937, 13.326411664603691], [77.12431101543187, 13.326412357284754], [77.12431053032698, 13.326413099781846], [77.12431012140041, 13.326413885030206], [77.12430979254306, 13.326414705558312], [77.12430954688394, 13.326415553558958], [77.12430938676044, 13.326416420963524], [77.12430931369617, 13.326417299518786], [77.1243093283863, 13.32641818086542], [77.12430943069104, 13.326419056617528], [77.12430961963702, 13.326419918442454], [77.12430989342639, 13.32642075814006], [77.1243102494541, 13.326421567720732], [77.12431068433263, 13.326422339481429], [77.12431119392414, 13.326423066078958], [77.12431177337996, 13.326423740599838], [77.12431241718663, 13.326424356626102], [77.12431311921843, 13.326424908296348], [77.12431387279563, 13.326425390361505], [77.12431467074802, 13.326425798234798], [77.12431550548322, 13.326426128035365], [77.12431636905886, 13.326426376625196], [77.1243172532581, 13.326426541639], [77.12431814966793, 13.326426621506695], [77.12431904975914, 13.326426615468346], [77.12436631167941, 13.326424037544834], [77.12436699666098, 13.32642397503036], [77.12436767498309, 13.326423862715387], [77.12437443615784, 13.326422487561913], [77.12437530360077, 13.326422267620387], [77.12437614517088, 13.326421966326345], [77.12437695293289, 13.326421586520716], [77.12437771927037, 13.326421131784736], [77.12437843695741, 13.326420606406149], [77.12437909922687, 13.326420015338812], [77.12437969983415, 13.326419364155957], [77.12438023311604, 13.326418658997657], [77.1243806940442, 13.326417906512924], [77.12438107827249, 13.32641711379702], [77.12438138217794, 13.326416288324536], [77.12438160289506, 13.326415437878952], [77.12438173834262, 13.326414570479194], [77.12438178724352, 13.326413694304074], [77.12438174913663, 13.32641281761514], [77.1243816243813, 13.326411948678773], [77.12438141415385, 13.326411095688279], [77.12438112043654, 13.326410266686583], [77.12438074599883, 13.326409469490436], [77.12438029437138, 13.326408711616676], [77.1243797698126, 13.326408000211384], [77.12437917726864, 13.326407341982462], [77.12437852232662, 13.32640674313643], [77.12437781116209, 13.326406209319856], [77.12437705048069, 13.326405745566165], [77.12437624745495, 13.326405356248133], [77.12437540965668, 13.326405045036685], [77.12437454498557, 13.326404814866255], [77.12437366159472, 13.326404667907155], [77.12437276781367, 13.326404605545074], [77.12437187207001, 13.32640462836803], [77.12431784897886, 13.32640858144413]]], [[[77.12419897341866, 13.326491661356439], [77.12419907235288, 13.32649255771176], [77.12419926200218, 13.32649343995181], [77.12419954047876, 13.326494299294758], [77.12419990501068, 13.32649512718671], [77.12420035196938, 13.326495915386815], [77.12420087690583, 13.326496656049322], [77.12420147459483, 13.326497341801678], [77.12420213908695, 13.326497965817897], [77.12420286376785, 13.326498521886517], [77.12420364142405, 13.326499004472423], [77.12420446431474, 13.326499408771959], [77.12420532424889, 13.32649973076072], [77.12420621266668, 13.326499967233625], [77.12420712072479, 13.326500115836827], [77.12420803938443, 13.326500175091128], [77.12420895950122, 13.326500144406706], [77.12420987191636, 13.326500024088997], [77.12421076754762, 13.326499815335643], [77.12421163747989, 13.326499520224582], [77.12421247305387, 13.32649914169334], [77.12421326595225, 13.326498683509833], [77.12421400828251, 13.326498150234814], [77.12421469265547, 13.326497547176514], [77.1242153122589, 13.326496880337773], [77.12421586092526, 13.32649615635631], [77.12421633319312, 13.326495382438642], [77.12421672436152, 13.326494566288352], [77.12421703053678, 13.326493716029404], [77.12421724867121, 13.326492840125281], [77.12421794137282, 13.326489299650063], [77.12421803785502, 13.326488697159903], [77.12422297234608, 13.326449221231439], [77.12422301014792, 13.326449007019775], [77.1242232036754, 13.326448900530643], [77.12426160388709, 13.32643014693934], [77.12426239476848, 13.326429711905162], [77.12426313821194, 13.326429202930427], [77.12426382703336, 13.326428624933497], [77.12426445457645, 13.326427983499716], [77.12426501477712, 13.326427284827446], [77.12426550222197, 13.326426535668148], [77.12426591220068, 13.326425743261161], [77.12426624075152, 13.326424915263738], [77.12426648469962, 13.32642405967705], [77.12426664168763, 13.326423184768874], [77.12426671019853, 13.326422298993695], [77.12426668957029, 13.326421410911001], [77.12426658000224, 13.326420529102593], [77.12426638255319, 13.326419662089629], [77.1242660991311, 13.326418818250296], [77.1242657324748, 13.326418005738851], [77.12426528612737, 13.326417232406829], [77.12426476440201, 13.326416505727147], [77.12426417234029, 13.326415832721912], [77.12426351566346, 13.326415219894567], [77.12426280071718, 13.326414673167038], [77.12426203441018, 13.326414197822496], [77.12426122414749, 13.32641379845434], [77.12426037775893, 13.32641347892177], [77.12425950342336, 13.32641324231252], [77.12425860958975, 13.326413090913011], [77.12425770489544, 13.326413026186257], [77.12425679808278, 13.326413048757738], [77.12420364860637, 13.326416937884078], [77.12420275951136, 13.326417045648205], [77.12420188527754, 13.326417237334642], [77.12420103414507, 13.326417511136631], [77.12420021413634, 13.326417864473434], [77.1241994329804, 13.326418294014648], [77.12419869804013, 13.326418795711605], [77.12419801624276, 13.326419364835516], [77.12419739401459, 13.326419996022064], [77.1241968372205, 13.326420683321954], [77.12419635110858, 13.326421420256985], [77.12419594026073, 13.326422199881126], [77.12419560854943, 13.326423014845968], [77.12419535910125, 13.326423857470001], [77.12419519426737, 13.326424719811008], [77.12419511560147, 13.326425593740932], [77.12419512384498, 13.32642647102247], [77.12419897341866, 13.326491661356439]]]], "type": "MultiPolygon"}, "id": "8", "properties": {"area_m2": 5005, "is_drawn": false, "label": "Electrical Block", "name": "Electrical Block", "number": null, "on_campus": true, "osm_id": "1124830825", "osm_name": "Electrical Block", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1241959, 13.326047, 77.1248589, 13.3262516], "geometry": {"coordinates": [[[77.1242195, 13.3262516], [77.1248589, 13.3261848], [77.124816, 13.326047], [77.1241959, 13.3261201], [77.1242195, 13.3262516]]], "type": "Polygon"}, "id": "9", "properties": {"area_m2": 1045, "is_drawn": false, "label": "Workshop", "name": "Workshop", "number": null, "on_campus": true, "osm_id": "1124830826", "osm_name": "Workshop", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1273467, 13.3305411, 77.1279261, 13.3311299], "geometry": {"coordinates": [[[77.1275634, 13.3311299], [77.1279261, 13.3310088], [77.1278574, 13.330729], [77.1276922, 13.3305849], [77.1275463, 13.3305411], [77.1273467, 13.3305933], [77.1275634, 13.3311299]]], "type": "Polygon"}, "id": "10", "properties": {"area_m2": 2530, "is_drawn": false, "label": "MBA Block", "name": "MBA Block", "number": null, "on_campus": true, "osm_id": "1124901489", "osm_name": "MBA Block", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1265404, 13.3283644, 77.1267893, 13.3285586], "geometry": {"coordinates": [[[77.1265726, 13.3285586], [77.1267893, 13.328521], [77.1267678, 13.3283644], [77.1265404, 13.3283937], [77.1265726, 13.3285586]]], "type": "Polygon"}, "id": "11", "properties": {"area_m2": 439, "is_drawn": false, "label": "Alumni Guest House", "name": "Alumni Guest House", "number": 1, "on_campus": true, "osm_id": "1124901494", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.1263787, 13.329304, 77.1265919, 13.3294698], "geometry": {"coordinates": [[[77.1265919, 13.3294418], [77.1265597, 13.329304], [77.1263787, 13.3293391], [77.1264089, 13.3294698], [77.1265919, 13.3294418]]], "type": "Polygon"}, "id": "12", "properties": {"area_m2": 305, "is_drawn": false, "label": "#2", "name": null, "number": 2, "on_campus": true, "osm_id": "1124901495", "osm_name": null, "type": "residential"}, "type": "Feature"}, {"bbox": [77.1264527, 13.3296861, 77.1267035, 13.3299399], "geometry": {"coordinates": [[[77.1267035, 13.329874], [77.1266584, 13.3296861], [77.1264527, 13.329755], [77.1265107, 13.3299399], [77.1267035, 13.329874]]], "type": "Polygon"}, "id": "13", "properties": {"area_m2": 487, "is_drawn": false, "label": "#3", "name": null, "number": 3, "on_campus": true, "osm_id": "1124901496", "osm_name": null, "type": "residential"}, "type": "Feature"}, {"bbox": [77.1266128, 13.330208, 77.1268336, 13.3304724], "geometry": {"coordinates": [[[77.1268336, 13.3303769], [77.126808, 13.330208], [77.1266128, 13.3302923], [77.1266461, 13.3304724], [77.1268336, 13.3303769]]], "type": "Polygon"}, "id": "14", "properties": {"area_m2": 432, "is_drawn": false, "label": "#4", "name": null, "number": 4, "on_campus": true, "osm_id": "1124901497", "osm_name": null, "type": "residential"}, "type": "Feature"}, {"bbox": [77.1252735, 13.3252073, 77.126076, 13.3256354], "geometry": {"coordinates": [[[77.126076, 13.3255477], [77.1260009, 13.3252073], [77.1252735, 13.3255435], [77.1256039, 13.3256354], [77.126076, 13.3255477]]], "type": "Polygon"}, "id": "15", "properties": {"area_m2": 2070, "is_drawn": false, "label": "Bio Plant", "name": "Bio Plant", "number": null, "on_campus": true, "osm_id": "1124901498", "osm_name": "Bio Plant", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1268555, 13.3257668, 77.1271136, 13.3259801], "geometry": {"coordinates": [[[77.1269133, 13.3259801], [77.127045, 13.3259714], [77.1271136, 13.3259029], [77.1271018, 13.3258151], [77.1270306, 13.3257668], [77.126934, 13.3257844], [77.1268555, 13.3258713], [77.1269133, 13.3259801]]], "type": "Polygon"}, "id": "16", "properties": {"area_m2": 479, "is_drawn": false, "label": "Canteen", "name": "Canteen", "number": null, "on_campus": true, "osm_id": "1124901499", "osm_name": "SIT College Canteen", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1273877, 13.3258211, 77.1279233, 13.3260854], "geometry": {"coordinates": [[[77.1274014, 13.3260854], [77.1279233, 13.3260263], [77.1278991, 13.3258211], [77.1273877, 13.3258787], [77.1274014, 13.3260854]]], "type": "Polygon"}, "id": "17", "properties": {"area_m2": 1289, "is_drawn": false, "label": "Alamprabhu Block", "name": "Alamprabhu Block", "number": 5, "on_campus": true, "osm_id": "1124901505", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.1261049, 13.3248801, 77.127127, 13.3256068], "geometry": {"coordinates": [[[77.126816, 13.3256068], [77.1269404, 13.3254872], [77.1270446, 13.3251582], [77.127127, 13.3248981], [77.1268551, 13.3248801], [77.1261049, 13.325198], [77.1261712, 13.3254165], [77.1265744, 13.325337], [77.126816, 13.3256068]]], "type": "Polygon"}, "id": "18", "properties": {"area_m2": 4691, "is_drawn": false, "label": "Girls Hostel", "name": "Girls Hostel", "number": 6, "on_campus": true, "osm_id": "1124901506", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.125177, 13.3261768, 77.125468, 13.3264777], "geometry": {"coordinates": [[[77.1252038, 13.3264777], [77.125468, 13.3264535], [77.1254412, 13.3261768], [77.125177, 13.3262011], [77.1252038, 13.3264777]]], "type": "Polygon"}, "id": "45", "properties": {"area_m2": 884, "is_drawn": false, "label": "Golden Jubilee Building", "name": "Golden Jubilee Building", "number": null, "on_campus": true, "osm_id": "416303282", "osm_name": "Glolden Jublie Building", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1242007, 13.3272611, 77.1246904, 13.327537], "geometry": {"coordinates": [[[77.1242218, 13.3275192], [77.1245608, 13.3274947], [77.1245641, 13.327537], [77.1246904, 13.3275279], [77.12467, 13.3272611], [77.1245589, 13.3272691], [77.1242007, 13.327267], [77.1242218, 13.3275192]]], "type": "Polygon"}, "id": "46", "properties": {"area_m2": 1386, "is_drawn": false, "label": "Bio Technology Block", "name": "Bio Technology Block", "number": null, "on_campus": true, "osm_id": "416303283", "osm_name": "Bio Technology Block", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1258264, 13.3266353, 77.1265062, 13.3271364], "geometry": {"coordinates": [[[77.1262025, 13.3268403], [77.1261762, 13.3266353], [77.1260474, 13.3266509], [77.126075, 13.3268655], [77.1258264, 13.3270378], [77.1258985, 13.3271364], [77.1261474, 13.3269427], [77.1264578, 13.327079], [77.1264768, 13.3270392], [77.1265062, 13.3269774], [77.1262025, 13.3268403]]], "type": "Polygon"}, "id": "47", "properties": {"area_m2": 1280, "is_drawn": false, "label": "Administration Block", "name": "Administration Block", "number": null, "on_campus": true, "osm_id": "416303380", "osm_name": "Administration Block", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1260706, 13.3281929, 77.126136, 13.3283168], "geometry": {"coordinates": [[[77.1260762, 13.3283168], [77.126136, 13.3283142], [77.1261305, 13.3281929], [77.1260706, 13.3281955], [77.1260762, 13.3283168]]], "type": "Polygon"}, "id": "525", "properties": {"area_m2": 87, "is_drawn": false, "label": "#7", "name": null, "number": 7, "on_campus": true, "osm_id": "417591767", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.1260925, 13.3286966, 77.1262556, 13.3288147], "geometry": {"coordinates": [[[77.1260976, 13.3288147], [77.1262556, 13.3288079], [77.1262505, 13.3286966], [77.1260925, 13.3287034], [77.1260976, 13.3288147]]], "type": "Polygon"}, "id": "557", "properties": {"area_m2": 211, "is_drawn": false, "label": "#8", "name": null, "number": 8, "on_campus": true, "osm_id": "417592027", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.1260815, 13.3285253, 77.1262199, 13.3286373], "geometry": {"coordinates": [[[77.1261004, 13.3286373], [77.1262199, 13.328613], [77.126201, 13.3285253], [77.1260815, 13.3285496], [77.1261004, 13.3286373]]], "type": "Polygon"}, "id": "1091", "properties": {"area_m2": 131, "is_drawn": false, "label": "#9", "name": null, "number": 9, "on_campus": true, "osm_id": "418023717", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.1264745, 13.330206, 77.1266098, 13.3303131], "geometry": {"coordinates": [[[77.1264981, 13.3303131], [77.1266098, 13.3302789], [77.1265862, 13.330206], [77.1264745, 13.3302402], [77.1264981, 13.3303131]]], "type": "Polygon"}, "id": "1102", "properties": {"area_m2": 107, "is_drawn": false, "label": "#10", "name": null, "number": 10, "on_campus": true, "osm_id": "418023759", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.1261345, 13.3288656, 77.1262843, 13.3289732], "geometry": {"coordinates": [[[77.126143, 13.3289732], [77.1262843, 13.3289614], [77.1262758, 13.3288656], [77.1261345, 13.3288775], [77.126143, 13.3289732]]], "type": "Polygon"}, "id": "1160", "properties": {"area_m2": 163, "is_drawn": false, "label": "#11", "name": null, "number": 11, "on_campus": true, "osm_id": "418023899", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.1262661, 13.329383, 77.1264089, 13.3294985], "geometry": {"coordinates": [[[77.1262879, 13.3294985], [77.1264089, 13.3294698], [77.1263871, 13.329383], [77.1262661, 13.3294117], [77.1262879, 13.3294985]]], "type": "Polygon"}, "id": "1183", "properties": {"area_m2": 133, "is_drawn": false, "label": "#12", "name": null, "number": 12, "on_campus": true, "osm_id": "418023938", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.1261836, 13.325891, 77.1267583, 13.3262627], "geometry": {"coordinates": [[[77.1267583, 13.3261896], [77.1267345, 13.325891], [77.1261836, 13.3259516], [77.1262202, 13.3262627], [77.1267583, 13.3261896]]], "type": "Polygon"}, "id": "2058", "properties": {"area_m2": 2015, "is_drawn": false, "label": "Computer Science Building", "name": "Computer Science Building", "number": null, "on_campus": true, "osm_id": "822311022", "osm_name": "Computer Science Building", "type": "yes"}, "type": "Feature"}, {"bbox": [77.1236418, 13.3270217, 77.124102, 13.3276345], "geometry": {"coordinates": [[[77.1239291, 13.3275188], [77.1237565, 13.3276345], [77.1236418, 13.3275515], [77.1239905, 13.3270217], [77.124102, 13.3271085], [77.1240759, 13.3272702], [77.1239291, 13.3275188]]], "type": "Polygon"}, "id": "2059", "properties": {"area_m2": 1478, "is_drawn": false, "label": "Stadium", "name": "Stadium", "number": 13, "on_campus": true, "osm_id": "822311024", "osm_name": null, "type": "stadium"}, "type": "Feature"}, {"bbox": [77.1281368, 13.3257857, 77.1290096, 13.3265413], "geometry": {"coordinates": [[[77.1281368, 13.3259166], [77.1281438, 13.3259958], [77.1281907, 13.3259919], [77.1282004, 13.3261028], [77.1281535, 13.3261067], [77.1281916, 13.3265413], [77.1282803, 13.3265339], [77.128279, 13.3265184], [77.1285602, 13.326495], [77.1285614, 13.3265083], [77.1286182, 13.3265036], [77.128617, 13.3264903], [77.1289134, 13.3264657], [77.1289148, 13.3264813], [77.1290096, 13.3264734], [77.1289707, 13.3260296], [77.1289339, 13.3260326], [77.1289257, 13.3259395], [77.1289626, 13.3259365], [77.1289549, 13.3258487], [77.1286615, 13.325873], [77.1286539, 13.3257857], [77.1285359, 13.3257955], [77.1285436, 13.3258828], [77.1281368, 13.3259166]], [[77.1286639, 13.3264134], [77.1289256, 13.3263917], [77.1288865, 13.325945], [77.1286247, 13.3259667], [77.1286639, 13.3264134]], [[77.1282656, 13.3264474], [77.1285514, 13.3264237], [77.1285123, 13.3259776], [77.1282265, 13.3260013], [77.1282656, 13.3264474]]], "type": "Polygon"}, "id": "2061", "properties": {"area_m2": 3131, "is_drawn": false, "label": "BVB Hostel", "name": "BVB Hostel", "number": 14, "on_campus": true, "osm_id": "rel6195347", "osm_name": null, "type": "yes"}, "type": "Feature"}, {"bbox": [77.129063, 13.325818, 77.129582, 13.326486], "geometry": {"coordinates": [[[77.1291, 13.326486], [77.129159, 13.326479], [77.129208, 13.326476], [77.129277, 13.32647], [77.129321, 13.326466], [77.129378, 13.326459], [77.129452, 13.326445], [77.129502, 13.32644], [77.129551, 13.326433], [77.129577, 13.326427], [77.129582, 13.326377], [77.12958, 13.326334], [77.129577, 13.326266], [77.129562, 13.32621], [77.129546, 13.326164], [77.129527, 13.326106], [77.129505, 13.326031], [77.12949, 13.325978], [77.129464, 13.325942], [77.129416, 13.325939], [77.129352, 13.325944], [77.129332, 13.325886], [77.129319, 13.325829], [77.129266, 13.325818], [77.129219, 13.325821], [77.129169, 13.325818], [77.129121, 13.325818], [77.129063, 13.325826], [77.129067, 13.325912], [77.129073, 13.325957], [77.129081, 13.326025], [77.129083, 13.326078], [77.129085, 13.326158], [77.129089, 13.326198], [77.129083, 13.326268], [77.129093, 13.326329], [77.129095, 13.326399], [77.1291, 13.326486]]], "type": "Polygon"}, "id": "2062", "properties": {"area_m2": 3250, "is_drawn": true, "label": "LBS Hostel", "name": "LBS Hostel", "number": 15, "on_campus": true, "osm_id": "drawn-2b0307", "osm_name": null, "type": "drawn"}, "type": "Feature"}, {"bbox": [77.124209, 13.326394, 77.124886, 13.326851], "geometry": {"coordinates": [[[77.124214, 13.326583], [77.124251, 13.326583], [77.124284, 13.326578], [77.124352, 13.326566], [77.12445, 13.326547], [77.124508, 13.326543], [77.124567, 13.326531], [77.124627, 13.326531], [77.124703, 13.326531], [77.124746, 13.326542], [77.12475, 13.326595], [77.124752, 13.326651], [77.124752, 13.326702], [77.12476, 13.326758], [77.124757, 13.32682], [77.124773, 13.326851], [77.124866, 13.326851], [77.124886, 13.326804], [77.124883, 13.326724], [77.124882, 13.326663], [77.124871, 13.326606], [77.124867, 13.326542], [77.12487, 13.326485], [77.12486, 13.326438], [77.124851, 13.326398], [77.1248, 13.326395], [77.124744, 13.326394], [77.124703, 13.326397], [77.12465, 13.326399], [77.124607, 13.326406], [77.124549, 13.326408], [77.124489, 13.326408], [77.124426, 13.326412], [77.124367, 13.326424], [77.124312, 13.326427], [77.124266, 13.326428], [77.124223, 13.326449], [77.124218, 13.326489], [77.124209, 13.326535], [77.124214, 13.326583]]], "type": "Polygon"}, "id": "2063", "properties": {"area_m2": 1536, "is_drawn": true, "label": "Mechanical Department", "name": "Mechanical Department", "number": 16, "on_campus": true, "osm_id": "drawn-3ec7d1", "osm_name": null, "type": "drawn"}, "type": "Feature"}, {"bbox": [77.125697, 13.327595, 77.125749, 13.327639], "geometry": {"coordinates": [[[77.125697, 13.327596], [77.125698, 13.327639], [77.125736, 13.327638], [77.125749, 13.327595], [77.125697, 13.327596]]], "type": "Polygon"}, "id": "2064", "properties": {"area_m2": 23, "is_drawn": true, "label": "Karnataka Bank", "name": "Karnataka Bank", "number": 17, "on_campus": true, "osm_id": "drawn-875bad", "osm_name": null, "type": "drawn"}, "type": "Feature"}, {"bbox": [77.124502, 13.327685, 77.12455, 13.327724], "geometry": {"coordinates": [[[77.124502, 13.327724], [77.12455, 13.327724], [77.124548, 13.327685], [77.124502, 13.327686], [77.124502, 13.327724]]], "type": "Polygon"}, "id": "2065", "properties": {"area_m2": 22, "is_drawn": true, "label": "Bank Gate", "name": "Bank Gate", "number": 18, "on_campus": true, "osm_id": "drawn-a06f5a", "osm_name": null, "type": "drawn"}, "type": "Feature"}, {"bbox": [77.125772, 13.327638, 77.125814, 13.327671], "geometry": {"coordinates": [[[77.125772, 13.327668], [77.125799, 13.327671], [77.125814, 13.327643], [77.125775, 13.327638], [77.125772, 13.327668]]], "type": "Polygon"}, "id": "2066", "properties": {"area_m2": 12, "is_drawn": true, "label": "Back Gate", "name": "Back Gate", "number": 19, "on_campus": true, "osm_id": "drawn-c2ba12", "osm_name": null, "type": "drawn"}, "type": "Feature"}, {"bbox": [77.124483, 13.326606, 77.124593, 13.3267], "geometry": {"coordinates": [[[77.124487, 13.3267], [77.124525, 13.326698], [77.124593, 13.326694], [77.124593, 13.326653], [77.124589, 13.326613], [77.124552, 13.326607], [77.124513, 13.326606], [77.124483, 13.326608], [77.124485, 13.326639], [77.124487, 13.326677], [77.124487, 13.3267]]], "type": "Polygon"}, "id": "2067", "properties": {"area_m2": 114, "is_drawn": true, "label": "Idea Lab", "name": "Idea Lab", "number": 20, "on_campus": true, "osm_id": "drawn-fa3389", "osm_name": null, "type": "drawn"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["label", "type", "area_m2", "osm_id"];
+    let aliases = ["label", "type", "area_m2", "osm_id"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var marker_4a5c83246d97e91e1900971c73633312 = L.marker(
+                [13.326791358591692, 77.1266398099561],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_8f733bfb57040d4decde0d0aebfc2e05 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eBirla Auditorium\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_4a5c83246d97e91e1900971c73633312.setIcon(div_icon_8f733bfb57040d4decde0d0aebfc2e05);
+            
+    
+            var marker_eac6ae7058e892fd1288135d7a95b2e2 = L.marker(
+                [13.327196023202571, 77.12531714496255],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_10b4315944378d745c941bab08ac495a = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eKC Library\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_eac6ae7058e892fd1288135d7a95b2e2.setIcon(div_icon_10b4315944378d745c941bab08ac495a);
+            
+    
+            var marker_a03df19ce59d9ee5b1e0295b039cc34b = L.marker(
+                [13.326336525383828, 77.12645014703821],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_313afcdcbfde061cd88a83888303a8bd = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eChemistry Block\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_a03df19ce59d9ee5b1e0295b039cc34b.setIcon(div_icon_313afcdcbfde061cd88a83888303a8bd);
+            
+    
+            var marker_df37074a02227647f6ac8ae4a82cc293 = L.marker(
+                [13.325749236921618, 77.12635651797531],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_6ff8817e2a273da694a4e706bd3f5084 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eMedia Centre\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_df37074a02227647f6ac8ae4a82cc293.setIcon(div_icon_6ff8817e2a273da694a4e706bd3f5084);
+            
+    
+            var marker_a0744614f37af32c53078346527f2646 = L.marker(
+                [13.326432650802227, 77.12577943547258],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_0f189efbea9d94062805a9bd5b14ade9 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eCivil Block\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_a0744614f37af32c53078346527f2646.setIcon(div_icon_0f189efbea9d94062805a9bd5b14ade9);
+            
+    
+            var marker_a27695fceacfc38948614c81f2154a6f = L.marker(
+                [13.325922596699462, 77.12458583256266],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_ac72e97d7b9e0aeb07325bf00440267b = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eECE Block\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_a27695fceacfc38948614c81f2154a6f.setIcon(div_icon_ac72e97d7b9e0aeb07325bf00440267b);
+            
+    
+            var marker_25fb0a6cbf9dd65b23b6169076e73fae = L.marker(
+                [13.326078604117637, 77.12520377907329],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_49174404f28782036abba958ebfccd1f = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eAmenities Block\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_25fb0a6cbf9dd65b23b6169076e73fae.setIcon(div_icon_49174404f28782036abba958ebfccd1f);
+            
+    
+            var marker_1b2332236a59507d375d669344a10cae = L.marker(
+                [13.325847304461913, 77.12507218908962],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_eefe1f84da9e66aa2f63d3281dd08aa4 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eBio Centre\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_1b2332236a59507d375d669344a10cae.setIcon(div_icon_eefe1f84da9e66aa2f63d3281dd08aa4);
+            
+    
+            var marker_2b2a2847aed25d75ac4b2521a258aaa8 = L.marker(
+                [13.326877026130825, 77.124508546072],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_782fb43c369d10d0cbb1ea7fcff5d6dd = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eElectrical Block\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_2b2a2847aed25d75ac4b2521a258aaa8.setIcon(div_icon_782fb43c369d10d0cbb1ea7fcff5d6dd);
+            
+    
+            var marker_5eb0d64442d756f34310403c3a20ff90 = L.marker(
+                [13.32615082694353, 77.12452585404782],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_d6b542b93c7861cce85d94d69d2fa9fa = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eWorkshop\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_5eb0d64442d756f34310403c3a20ff90.setIcon(div_icon_d6b542b93c7861cce85d94d69d2fa9fa);
+            
+    
+            var marker_5496c0bd417be31cfd4781cee55d5334 = L.marker(
+                [13.330821937504744, 77.12764227374848],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_0013758720e85e74ba66594517cdd553 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eMBA Block\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_5496c0bd417be31cfd4781cee55d5334.setIcon(div_icon_0013758720e85e74ba66594517cdd553);
+            
+    
+            var marker_35a64235b37acd450b84a71df2b419d4 = L.marker(
+                [13.328459044575519, 77.12666632048845],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_6448cf2ea98279353d7e9d1e6edb384c = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eAlumni Guest House\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_35a64235b37acd450b84a71df2b419d4.setIcon(div_icon_6448cf2ea98279353d7e9d1e6edb384c);
+            
+    
+            var marker_1f5978cefb81a6f42a5d6b05550ec4bf = L.marker(
+                [13.329388555488727, 77.12648561350403],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_80a5c1755590ae224d8172d7c559b0ea = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#d9480f;border-radius:8px;padding:1px 4px;display:inline-block\"\u003e#2\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_1f5978cefb81a6f42a5d6b05550ec4bf.setIcon(div_icon_80a5c1755590ae224d8172d7c559b0ea);
+            
+    
+            var marker_bbe2d239cf64e9b71997f8783ff701ab = L.marker(
+                [13.329812808789411, 77.12658094323014],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_66fee28e6e007f5ded8856b4475fff8d = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#d9480f;border-radius:8px;padding:1px 4px;display:inline-block\"\u003e#3\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_bbe2d239cf64e9b71997f8783ff701ab.setIcon(div_icon_66fee28e6e007f5ded8856b4475fff8d);
+            
+    
+            var marker_d5f1b429d3f89d68ff2e2ae641295fbf = L.marker(
+                [13.330337580337051, 77.12672380139978],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_9e24de703b7a42a0098d8fc2c6173ed7 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#d9480f;border-radius:8px;padding:1px 4px;display:inline-block\"\u003e#4\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_d5f1b429d3f89d68ff2e2ae641295fbf.setIcon(div_icon_9e24de703b7a42a0098d8fc2c6173ed7);
+            
+    
+            var marker_454f06b1b2e0b490410c5e4bd6bbb81c = L.marker(
+                [13.325462745093029, 77.12575572789396],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_8c4eeb4a3f86f4857c735bd0c18a7048 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eBio Plant\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_454f06b1b2e0b490410c5e4bd6bbb81c.setIcon(div_icon_8c4eeb4a3f86f4857c735bd0c18a7048);
+            
+    
+            var marker_fb888021c60e32930076bb0b4d644058 = L.marker(
+                [13.325876587050185, 77.12699017012713],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_2c1ef7d91e9c4a12ada25f02837b1c0a = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eCanteen\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_fb888021c60e32930076bb0b4d644058.setIcon(div_icon_2c1ef7d91e9c4a12ada25f02837b1c0a);
+            
+    
+            var marker_d34ee55d415cb9bb3740e248a9becab5 = L.marker(
+                [13.325953232088423, 77.12765284218536],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_c9d3880035bdfbe65123f24f7440e536 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eAlamprabhu Block\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_d34ee55d415cb9bb3740e248a9becab5.setIcon(div_icon_c9d3880035bdfbe65123f24f7440e536);
+            
+    
+            var marker_95881a72ec8bdd4d5b9b0cbf2d72d5eb = L.marker(
+                [13.325202115672086, 77.12667671990285],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_06ccd0029aae948a65b2da18dee58895 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eGirls Hostel\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_95881a72ec8bdd4d5b9b0cbf2d72d5eb.setIcon(div_icon_06ccd0029aae948a65b2da18dee58895);
+            
+    
+            var marker_f48cd66caad4e3644f3a2304bc0d117c = L.marker(
+                [13.326327273438105, 77.12532250780701],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_d057cd75ecea6d0f5e3d62b3ddee660e = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eGolden Jubilee Building\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_f48cd66caad4e3644f3a2304bc0d117c.setIcon(div_icon_d057cd75ecea6d0f5e3d62b3ddee660e);
+            
+    
+            var marker_3d2cb1f4b4120444e7716d06bfd2e056 = L.marker(
+                [13.327390863975609, 77.12444849775738],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_278072feefbdfd04ca53d06eeb873f49 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eBio Technology Block\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_3d2cb1f4b4120444e7716d06bfd2e056.setIcon(div_icon_278072feefbdfd04ca53d06eeb873f49);
+            
+    
+            var marker_b5c07e437d7d37b733f508a2b2d17436 = L.marker(
+                [13.326913751806405, 77.12615238669572],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_c0b287ae8bbf6780e065857393df3464 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eAdministration Block\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_b5c07e437d7d37b733f508a2b2d17436.setIcon(div_icon_c0b287ae8bbf6780e065857393df3464);
+            
+    
+            var marker_46e63ebc8e395055bb1e22929402a855 = L.marker(
+                [13.328254833151803, 77.12610332405049],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_bc8bc0f73818b68f5c7d80c1f099bb0d = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#d9480f;border-radius:8px;padding:1px 4px;display:inline-block\"\u003e#7\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_46e63ebc8e395055bb1e22929402a855.setIcon(div_icon_bc8bc0f73818b68f5c7d80c1f099bb0d);
+            
+    
+            var marker_fe35dbd3ccf3349d716d5fa2a976cb1c = L.marker(
+                [13.328755650000002, 77.12617405000002],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_993b75dd7ffbf5fe9f7f4ec31f9b5715 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#d9480f;border-radius:8px;padding:1px 4px;display:inline-block\"\u003e#8\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_fe35dbd3ccf3349d716d5fa2a976cb1c.setIcon(div_icon_993b75dd7ffbf5fe9f7f4ec31f9b5715);
+            
+    
+            var marker_c736a8afb80c0f16bad6cfa5b0edc3d9 = L.marker(
+                [13.3285813, 77.1261507],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_e625cf27bd3d9190612703bd5d2c1ff1 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#d9480f;border-radius:8px;padding:1px 4px;display:inline-block\"\u003e#9\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_c736a8afb80c0f16bad6cfa5b0edc3d9.setIcon(div_icon_e625cf27bd3d9190612703bd5d2c1ff1);
+            
+    
+            var marker_236c584d2a3aa2b84003bd324a698f39 = L.marker(
+                [13.33025955, 77.12654214999999],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_2c7c284f737f6b2288cafc2edd297ef5 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#d9480f;border-radius:8px;padding:1px 4px;display:inline-block\"\u003e#10\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_236c584d2a3aa2b84003bd324a698f39.setIcon(div_icon_2c7c284f737f6b2288cafc2edd297ef5);
+            
+    
+            var marker_e9146d343709db85bf7fa5efbbb4c39a = L.marker(
+                [13.328919423478698, 77.12620941216261],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_b1fd6a2658c7061f0d05ce3f639dce3b = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#d9480f;border-radius:8px;padding:1px 4px;display:inline-block\"\u003e#11\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_e9146d343709db85bf7fa5efbbb4c39a.setIcon(div_icon_b1fd6a2658c7061f0d05ce3f639dce3b);
+            
+    
+            var marker_ee4c2bd23cfa4ada9db5d8e227b2cee2 = L.marker(
+                [13.329440750000002, 77.12633750000002],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_aa035737631414f969d6d98e89c1c24e = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#d9480f;border-radius:8px;padding:1px 4px;display:inline-block\"\u003e#12\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_ee4c2bd23cfa4ada9db5d8e227b2cee2.setIcon(div_icon_aa035737631414f969d6d98e89c1c24e);
+            
+    
+            var marker_449dc45ff4acd396ae03d52d57e0e25b = L.marker(
+                [13.32607344611322, 77.1264720279185],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_6293741a6eb1b7886c9cf667e4fe40b0 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eComputer Science Building\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_449dc45ff4acd396ae03d52d57e0e25b.setIcon(div_icon_6293741a6eb1b7886c9cf667e4fe40b0);
+            
+    
+            var marker_67078d0b4d1292c7e1fc30cc38ec78e7 = L.marker(
+                [13.327345928907684, 77.12389561835445],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_f8e6f39f0d99edfb2aef30ff0e1f1488 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eStadium\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_67078d0b4d1292c7e1fc30cc38ec78e7.setIcon(div_icon_f8e6f39f0d99edfb2aef30ff0e1f1488);
+            
+    
+            var marker_7f0d6e4c82690483972a0398e2b2c7c8 = L.marker(
+                [13.326174137979505, 77.12857601593974],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_74a3bdb946c1bb69bb52285daaa6fd0d = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eBVB Hostel\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_7f0d6e4c82690483972a0398e2b2c7c8.setIcon(div_icon_74a3bdb946c1bb69bb52285daaa6fd0d);
+            
+    
+            var marker_be154f1d225351bb8fa16f24922cc8a7 = L.marker(
+                [13.326170877850782, 77.12929954762816],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_c744d43b21a945ab8873044987747bd9 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eLBS Hostel\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_be154f1d225351bb8fa16f24922cc8a7.setIcon(div_icon_c744d43b21a945ab8873044987747bd9);
+            
+    
+            var marker_6620de28a55e40db3b990f53726d1146 = L.marker(
+                [13.326544538261285, 77.12462134954518],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_822a51c2968ee8cdfc0e2220a0bf4ca1 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eMechanical Department\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_6620de28a55e40db3b990f53726d1146.setIcon(div_icon_822a51c2968ee8cdfc0e2220a0bf4ca1);
+            
+    
+            var marker_847340866e97c44568d5793c0241e3ce = L.marker(
+                [13.327615882322448, 77.12572012882322],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_46d9710d3200179f47ca2da8507acd7d = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eKarnataka Bank\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_847340866e97c44568d5793c0241e3ce.setIcon(div_icon_46d9710d3200179f47ca2da8507acd7d);
+            
+    
+            var marker_439bb0b795277ef5b1f3801c5b419b04 = L.marker(
+                [13.327704883609576, 77.1245256073665],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_3c8e4940295b24c4fa79b252c6d61be1 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eBank Gate\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_439bb0b795277ef5b1f3801c5b419b04.setIcon(div_icon_3c8e4940295b24c4fa79b252c6d61be1);
+            
+    
+            var marker_559b6a02e4000079d837abe9bebe2b44 = L.marker(
+                [13.327654103222557, 77.12579022658609],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_441d4a3fe6ef76d4e3ff8e1b60ec499c = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eBack Gate\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_559b6a02e4000079d837abe9bebe2b44.setIcon(div_icon_441d4a3fe6ef76d4e3ff8e1b60ec499c);
+            
+    
+            var marker_17e2613966cad54d5bddfa7767e892e4 = L.marker(
+                [13.326652470689503, 77.12453762410189],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_c63e9f56cc84a2bfb3ac9470b45e8266 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#001a66;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eIdea Lab\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_17e2613966cad54d5bddfa7767e892e4.setIcon(div_icon_c63e9f56cc84a2bfb3ac9470b45e8266);
+            
+    
+            var marker_eeb78c0c47ea78f06da9727471e6f163 = L.marker(
+                [13.326861188946275, 77.12561323578807],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_f7b03b004415f6ef36cf39faef008b23 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eKho-Kho Court\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_eeb78c0c47ea78f06da9727471e6f163.setIcon(div_icon_f7b03b004415f6ef36cf39faef008b23);
+            
+    
+            var marker_e45898d2061e5edde99143d7a94b8a62 = L.marker(
+                [13.3261586024044, 77.12577463268345],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_a6a1d5fea2a555378ea855cabe8664f0 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eComputer Science and Civil department Parking\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_e45898d2061e5edde99143d7a94b8a62.setIcon(div_icon_a6a1d5fea2a555378ea855cabe8664f0);
+            
+    
+            var marker_aeecb21c3c21b4cbeee6cc31997904c1 = L.marker(
+                [13.327647437178937, 77.12517982185481],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_12c336f11d2088b45d3d90d91af91407 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eNear Coffe shop and Bank gate Parking\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_aeecb21c3c21b4cbeee6cc31997904c1.setIcon(div_icon_12c336f11d2088b45d3d90d91af91407);
+            
+    
+            var marker_391cefacfc2f0fa678f7b1f6049a8180 = L.marker(
+                [13.327605937510988, 77.12595970063016],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_4b4c2bb49bc3459b83987ef229b1f3fb = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eNear Bank Gate Parking\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_391cefacfc2f0fa678f7b1f6049a8180.setIcon(div_icon_4b4c2bb49bc3459b83987ef229b1f3fb);
+            
+    
+            var marker_ae1137d1036aa8822d51429906946a20 = L.marker(
+                [13.327701365298266, 77.12396812367103],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_c40eec8022dd4ea20e265077568baac1 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eStadium Parking\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_ae1137d1036aa8822d51429906946a20.setIcon(div_icon_c40eec8022dd4ea20e265077568baac1);
+            
+    
+            var marker_6baf6d7e4325a30c82b1a1ba32054188 = L.marker(
+                [13.331296993826324, 77.12744546851428],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_fd45d4cb3785c6d3ff20b218e88836de = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eMBA Department Parking\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_6baf6d7e4325a30c82b1a1ba32054188.setIcon(div_icon_fd45d4cb3785c6d3ff20b218e88836de);
+            
+    
+            var marker_ea98e035c21d7a9e06e643163eb97415 = L.marker(
+                [13.328118114510165, 77.12663363526666],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_e31a7e4f73a3c71e1b626f733b02ba61 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eTemple\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_ea98e035c21d7a9e06e643163eb97415.setIcon(div_icon_e31a7e4f73a3c71e1b626f733b02ba61);
+            
+    
+            var marker_5506ffda8815d250afd1f32744bba5d0 = L.marker(
+                [13.326081311657612, 77.12716471257704],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_ec4ae04e5fc06b51e71f51318781bd8f = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eHealth Centre\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_5506ffda8815d250afd1f32744bba5d0.setIcon(div_icon_ec4ae04e5fc06b51e71f51318781bd8f);
+            
+    
+            var marker_9f8d96cd5e911e1141f4eaabaf20bb52 = L.marker(
+                [13.32642684665413, 77.12750052131848],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_5d80d164ec3a3099b486af14db14315f = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#fff;background:#1b7f3b;border-radius:8px;padding:1px 4px;display:inline-block\"\u003eA8\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_9f8d96cd5e911e1141f4eaabaf20bb52.setIcon(div_icon_5d80d164ec3a3099b486af14db14315f);
+            
+    
+            var marker_d49bec72180dae30a7b30237db755687 = L.marker(
+                [13.32780215, 77.12661795000001],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_5f75095151b02b9ca1aa6755245073c2 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eBBC court\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_d49bec72180dae30a7b30237db755687.setIcon(div_icon_5f75095151b02b9ca1aa6755245073c2);
+            
+    
+            var marker_abf2447128e46e8e702c55e1352ca9bf = L.marker(
+                [13.327052374622355, 77.12302351613013],
+                {
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            var div_icon_a1550ac13cfa75ca3079fee33884b799 = L.divIcon({
+  "html": "\u003cdiv style=\"font:bold 11px sans-serif;color:#0b5e2a;text-shadow:0 0 3px #fff;white-space:nowrap;display:inline-block\"\u003eSri Shivakumara Swamiji Stadium\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_abf2447128e46e8e702c55e1352ca9bf.setIcon(div_icon_a1550ac13cfa75ca3079fee33884b799);
+            
+    
+                var lat_lng_popup_297739d61daa0437639fe8034a009eb0 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_297739d61daa0437639fe8034a009eb0
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_6b42f5ed7e2012918cf9864d90c284aa);
+                    }
+                map_6b42f5ed7e2012918cf9864d90c284aa.on('click', latLngPop);
+            
+    
+            var layer_control_fddee48191ee6b43a37e5715871e7013_layers = {
+                base_layers : {
+                    "Street map" : tile_layer_99f3130948fe27e3fa9045e5deb3a92c,
+                    "Satellite" : tile_layer_fb7e552c354d708045fb4d6241e55fb4,
+                },
+                overlays :  {
+                    "Campus boundary" : geo_json_127a521228ec0089cc710fdb2e158427,
+                    "Grounds / parking" : geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d,
+                    "Walkable paths" : geo_json_7795c8d12b24be7256f9e5cf04742123,
+                    "Buildings" : geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb,
+                },
+            };
+            let layer_control_fddee48191ee6b43a37e5715871e7013 = L.control.layers(
+                layer_control_fddee48191ee6b43a37e5715871e7013_layers.base_layers,
+                layer_control_fddee48191ee6b43a37e5715871e7013_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+
+        
+    
+            tile_layer_99f3130948fe27e3fa9045e5deb3a92c.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            tile_layer_fb7e552c354d708045fb4d6241e55fb4.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            geo_json_127a521228ec0089cc710fdb2e158427.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            geo_json_ba5f6d7ea7b07dd15aa4b9f131ac9b5d.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            geo_json_7795c8d12b24be7256f9e5cf04742123.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            geo_json_fd101e88b0b8b7fc24d992dd72b0c3fb.addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+                marker_4a5c83246d97e91e1900971c73633312.setIcon(div_icon_8f733bfb57040d4decde0d0aebfc2e05);
+            
+    
+                marker_eac6ae7058e892fd1288135d7a95b2e2.setIcon(div_icon_10b4315944378d745c941bab08ac495a);
+            
+    
+                marker_a03df19ce59d9ee5b1e0295b039cc34b.setIcon(div_icon_313afcdcbfde061cd88a83888303a8bd);
+            
+    
+                marker_df37074a02227647f6ac8ae4a82cc293.setIcon(div_icon_6ff8817e2a273da694a4e706bd3f5084);
+            
+    
+                marker_a0744614f37af32c53078346527f2646.setIcon(div_icon_0f189efbea9d94062805a9bd5b14ade9);
+            
+    
+                marker_a27695fceacfc38948614c81f2154a6f.setIcon(div_icon_ac72e97d7b9e0aeb07325bf00440267b);
+            
+    
+                marker_25fb0a6cbf9dd65b23b6169076e73fae.setIcon(div_icon_49174404f28782036abba958ebfccd1f);
+            
+    
+                marker_1b2332236a59507d375d669344a10cae.setIcon(div_icon_eefe1f84da9e66aa2f63d3281dd08aa4);
+            
+    
+                marker_2b2a2847aed25d75ac4b2521a258aaa8.setIcon(div_icon_782fb43c369d10d0cbb1ea7fcff5d6dd);
+            
+    
+                marker_5eb0d64442d756f34310403c3a20ff90.setIcon(div_icon_d6b542b93c7861cce85d94d69d2fa9fa);
+            
+    
+                marker_5496c0bd417be31cfd4781cee55d5334.setIcon(div_icon_0013758720e85e74ba66594517cdd553);
+            
+    
+                marker_35a64235b37acd450b84a71df2b419d4.setIcon(div_icon_6448cf2ea98279353d7e9d1e6edb384c);
+            
+    
+                marker_1f5978cefb81a6f42a5d6b05550ec4bf.setIcon(div_icon_80a5c1755590ae224d8172d7c559b0ea);
+            
+    
+                marker_bbe2d239cf64e9b71997f8783ff701ab.setIcon(div_icon_66fee28e6e007f5ded8856b4475fff8d);
+            
+    
+                marker_d5f1b429d3f89d68ff2e2ae641295fbf.setIcon(div_icon_9e24de703b7a42a0098d8fc2c6173ed7);
+            
+    
+                marker_454f06b1b2e0b490410c5e4bd6bbb81c.setIcon(div_icon_8c4eeb4a3f86f4857c735bd0c18a7048);
+            
+    
+                marker_fb888021c60e32930076bb0b4d644058.setIcon(div_icon_2c1ef7d91e9c4a12ada25f02837b1c0a);
+            
+    
+                marker_d34ee55d415cb9bb3740e248a9becab5.setIcon(div_icon_c9d3880035bdfbe65123f24f7440e536);
+            
+    
+                marker_95881a72ec8bdd4d5b9b0cbf2d72d5eb.setIcon(div_icon_06ccd0029aae948a65b2da18dee58895);
+            
+    
+                marker_f48cd66caad4e3644f3a2304bc0d117c.setIcon(div_icon_d057cd75ecea6d0f5e3d62b3ddee660e);
+            
+    
+                marker_3d2cb1f4b4120444e7716d06bfd2e056.setIcon(div_icon_278072feefbdfd04ca53d06eeb873f49);
+            
+    
+                marker_b5c07e437d7d37b733f508a2b2d17436.setIcon(div_icon_c0b287ae8bbf6780e065857393df3464);
+            
+    
+                marker_46e63ebc8e395055bb1e22929402a855.setIcon(div_icon_bc8bc0f73818b68f5c7d80c1f099bb0d);
+            
+    
+                marker_fe35dbd3ccf3349d716d5fa2a976cb1c.setIcon(div_icon_993b75dd7ffbf5fe9f7f4ec31f9b5715);
+            
+    
+                marker_c736a8afb80c0f16bad6cfa5b0edc3d9.setIcon(div_icon_e625cf27bd3d9190612703bd5d2c1ff1);
+            
+    
+                marker_236c584d2a3aa2b84003bd324a698f39.setIcon(div_icon_2c7c284f737f6b2288cafc2edd297ef5);
+            
+    
+                marker_e9146d343709db85bf7fa5efbbb4c39a.setIcon(div_icon_b1fd6a2658c7061f0d05ce3f639dce3b);
+            
+    
+                marker_ee4c2bd23cfa4ada9db5d8e227b2cee2.setIcon(div_icon_aa035737631414f969d6d98e89c1c24e);
+            
+    
+                marker_449dc45ff4acd396ae03d52d57e0e25b.setIcon(div_icon_6293741a6eb1b7886c9cf667e4fe40b0);
+            
+    
+                marker_67078d0b4d1292c7e1fc30cc38ec78e7.setIcon(div_icon_f8e6f39f0d99edfb2aef30ff0e1f1488);
+            
+    
+                marker_7f0d6e4c82690483972a0398e2b2c7c8.setIcon(div_icon_74a3bdb946c1bb69bb52285daaa6fd0d);
+            
+    
+                marker_be154f1d225351bb8fa16f24922cc8a7.setIcon(div_icon_c744d43b21a945ab8873044987747bd9);
+            
+    
+                marker_6620de28a55e40db3b990f53726d1146.setIcon(div_icon_822a51c2968ee8cdfc0e2220a0bf4ca1);
+            
+    
+                marker_847340866e97c44568d5793c0241e3ce.setIcon(div_icon_46d9710d3200179f47ca2da8507acd7d);
+            
+    
+                marker_439bb0b795277ef5b1f3801c5b419b04.setIcon(div_icon_3c8e4940295b24c4fa79b252c6d61be1);
+            
+    
+                marker_559b6a02e4000079d837abe9bebe2b44.setIcon(div_icon_441d4a3fe6ef76d4e3ff8e1b60ec499c);
+            
+    
+                marker_17e2613966cad54d5bddfa7767e892e4.setIcon(div_icon_c63e9f56cc84a2bfb3ac9470b45e8266);
+            
+    
+                marker_eeb78c0c47ea78f06da9727471e6f163.setIcon(div_icon_f7b03b004415f6ef36cf39faef008b23);
+            
+    
+                marker_e45898d2061e5edde99143d7a94b8a62.setIcon(div_icon_a6a1d5fea2a555378ea855cabe8664f0);
+            
+    
+                marker_aeecb21c3c21b4cbeee6cc31997904c1.setIcon(div_icon_12c336f11d2088b45d3d90d91af91407);
+            
+    
+                marker_391cefacfc2f0fa678f7b1f6049a8180.setIcon(div_icon_4b4c2bb49bc3459b83987ef229b1f3fb);
+            
+    
+                marker_ae1137d1036aa8822d51429906946a20.setIcon(div_icon_c40eec8022dd4ea20e265077568baac1);
+            
+    
+                marker_6baf6d7e4325a30c82b1a1ba32054188.setIcon(div_icon_fd45d4cb3785c6d3ff20b218e88836de);
+            
+    
+                marker_ea98e035c21d7a9e06e643163eb97415.setIcon(div_icon_e31a7e4f73a3c71e1b626f733b02ba61);
+            
+    
+                marker_5506ffda8815d250afd1f32744bba5d0.setIcon(div_icon_ec4ae04e5fc06b51e71f51318781bd8f);
+            
+    
+                marker_9f8d96cd5e911e1141f4eaabaf20bb52.setIcon(div_icon_5d80d164ec3a3099b486af14db14315f);
+            
+    
+                marker_d49bec72180dae30a7b30237db755687.setIcon(div_icon_5f75095151b02b9ca1aa6755245073c2);
+            
+    
+                marker_abf2447128e46e8e702c55e1352ca9bf.setIcon(div_icon_a1550ac13cfa75ca3079fee33884b799);
+            
+    
+            var poly_line_7f360a81af8ca0e825295ec959e887b9 = L.polyline(
+                [[13.327199999999996, 77.1253], [13.32720074966776, 77.12534613248518], [13.327201499327083, 77.12539226496935], [13.327202248977967, 77.12543839745248], [13.32720299862041, 77.12548452993458], [13.327179106149808, 77.12549904628432], [13.327135249794988, 77.125487948726], [13.327091393438945, 77.12547685117283], [13.327047537081674, 77.12546575362484], [13.327003680723173, 77.12545465608201], [13.326959824363447, 77.12544355854435], [13.326915968002492, 77.12543246101185], [13.326872111640311, 77.12542136348452], [13.326828255276904, 77.12541026596234], [13.326784398912267, 77.12539916844536], [13.326740542546407, 77.12538807093352], [13.326696686179313, 77.12537697342685], [13.326652829810994, 77.12536587592535], [13.32660897344145, 77.12535477842901], [13.326607339776677, 77.12531389022999], [13.326612688000486, 77.12526807587251], [13.326618036216312, 77.12522226151174], [13.32662338442416, 77.1251764471477], [13.326628732624028, 77.12513063278034], [13.326634080815916, 77.12508481840969], [13.326639428999822, 77.12503900403576], [13.326645999244, 77.1249946635181], [13.326645188797764, 77.12499306418547], [13.32660029538094, 77.12498785054892], [13.326555401963576, 77.12498263691558], [13.326510508545667, 77.12497742328544], [13.326465615127212, 77.12497220965852], [13.326420721708217, 77.1249669960348], [13.32637585831033, 77.1249615198324], [13.326330996164563, 77.12495603267678], [13.326286131216031, 77.12495056950213], [13.326241264441567, 77.12494512194998], [13.326196396179686, 77.12493968748826], [13.32615149976105, 77.12493450085866], [13.326106603341868, 77.12492931423225], [13.32606170692215, 77.12492412760902], [13.3260172064749, 77.12491860280541], [13.326020145588412, 77.12487256190053], [13.326023084693725, 77.12482652099325], [13.326026023790844, 77.12478048008356], [13.32602896287977, 77.12473443917142], [13.326031901960496, 77.1246883982569], [13.32603484103303, 77.12464235733995], [13.326007555472092, 77.12462033511882], [13.325963127734902, 77.12461193532624], [13.325918699996826, 77.12460353553797], [13.3259, 77.1246]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+            poly_line_7f360a81af8ca0e825295ec959e887b9.bindTooltip(
+                `<div>
+                     simulated walk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69f7783d7240d0c96bad3ab157282338 = L.circleMarker(
+                [13.327215617184047, 77.1252912460439],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        var popup_1c44a4affac1e8b5e252d687576c586e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb58541e19388d658b84403dface8abc = $(`<div id="html_fb58541e19388d658b84403dface8abc" style="width: 100.0%; height: 100.0%;">You are at the KC Library.</div>`)[0];
+                popup_1c44a4affac1e8b5e252d687576c586e.setContent(html_fb58541e19388d658b84403dface8abc);
+            
+        
+
+        circle_marker_69f7783d7240d0c96bad3ab157282338.bindPopup(popup_1c44a4affac1e8b5e252d687576c586e)
+        ;
+
+        
+    
+    
+            var circle_marker_09d78e229c065e225186f5f38b09065c = L.circleMarker(
+                [13.327084492580134, 77.12547936745223],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        var popup_64e55fcd9fe7eb96dca6e0db7eeefaf6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1475ea54a0154da8afe699789e606c7d = $(`<div id="html_1475ea54a0154da8afe699789e606c7d" style="width: 100.0%; height: 100.0%;">You are inside SIT campus, on a footpath. The KC Library is 11 metres to the west; the Administration Block is 38 metres to the east.</div>`)[0];
+                popup_64e55fcd9fe7eb96dca6e0db7eeefaf6.setContent(html_1475ea54a0154da8afe699789e606c7d);
+            
+        
+
+        circle_marker_09d78e229c065e225186f5f38b09065c.bindPopup(popup_64e55fcd9fe7eb96dca6e0db7eeefaf6)
+        ;
+
+        
+    
+    
+            var circle_marker_acd0fe196885b277db34226c93339abe = L.circleMarker(
+                [13.326709867947159, 77.12536911133066],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        var popup_22b79c64ce8079804b6d6953a236a1a1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a0f04c53f279d14aa8cca8e33bc72900 = $(`<div id="html_a0f04c53f279d14aa8cca8e33bc72900" style="width: 100.0%; height: 100.0%;">You are inside SIT campus, on a footpath. The Civil Block is 26 metres to the south-east; the Golden Jubilee Building is 27 metres to the south; the KC Library is 28 metres to the north.</div>`)[0];
+                popup_22b79c64ce8079804b6d6953a236a1a1.setContent(html_a0f04c53f279d14aa8cca8e33bc72900);
+            
+        
+
+        circle_marker_acd0fe196885b277db34226c93339abe.bindPopup(popup_22b79c64ce8079804b6d6953a236a1a1)
+        ;
+
+        
+    
+    
+            var circle_marker_a39882eea8ecef25013fb5560eff105a = L.circleMarker(
+                [13.326604935614162, 77.12513083566687],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        var popup_45bbddc8961325271f0a0cd425444e1f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4a974761b77940e778aa9a0813b3ff84 = $(`<div id="html_4a974761b77940e778aa9a0813b3ff84" style="width: 100.0%; height: 100.0%;">You are inside SIT campus, on a footpath. The Golden Jubilee Building is 16 metres to the south-east; the Mechanical Department is 28 metres to the west; the Electrical Block is 39 metres to the north-west.</div>`)[0];
+                popup_45bbddc8961325271f0a0cd425444e1f.setContent(html_4a974761b77940e778aa9a0813b3ff84);
+            
+        
+
+        circle_marker_a39882eea8ecef25013fb5560eff105a.bindPopup(popup_45bbddc8961325271f0a0cd425444e1f)
+        ;
+
+        
+    
+    
+            var circle_marker_f7167f9bd510c0bb2979d389932c874b = L.circleMarker(
+                [13.326457763220105, 77.1249386887246],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        var popup_54b5012f198e54c4c5421e397d7df19f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1529904a23bc399815bffc1b8ff54d03 = $(`<div id="html_1529904a23bc399815bffc1b8ff54d03" style="width: 100.0%; height: 100.0%;">You are beside the Mechanical Department, on a footpath. The Electrical Block is 13 metres to the south-west; the Golden Jubilee Building is 28 metres to the east; the Workshop is 31 metres to the south.</div>`)[0];
+                popup_54b5012f198e54c4c5421e397d7df19f.setContent(html_1529904a23bc399815bffc1b8ff54d03);
+            
+        
+
+        circle_marker_f7167f9bd510c0bb2979d389932c874b.bindPopup(popup_54b5012f198e54c4c5421e397d7df19f)
+        ;
+
+        
+    
+    
+            var circle_marker_6ea7974c49d34ba0c21c204334065294 = L.circleMarker(
+                [13.326209857577197, 77.12495387387263],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        var popup_d471c069e721539508c02873c86a7878 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_20588218ff7da9d91cd0453052a017db = $(`<div id="html_20588218ff7da9d91cd0453052a017db" style="width: 100.0%; height: 100.0%;">You are beside the Amenities Block, on a footpath. The Workshop is 11 metres to the west; the Electrical Block is 22 metres to the north-west; the Mechanical Department is 24 metres to the north-west.</div>`)[0];
+                popup_d471c069e721539508c02873c86a7878.setContent(html_20588218ff7da9d91cd0453052a017db);
+            
+        
+
+        circle_marker_6ea7974c49d34ba0c21c204334065294.bindPopup(popup_d471c069e721539508c02873c86a7878)
+        ;
+
+        
+    
+    
+            var circle_marker_32ace613569353c03dfdebc2353c64dc = L.circleMarker(
+                [13.326000458200385, 77.12482712017396],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        var popup_9c8cac1232f945f7164faadacb96f141 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0693d2a98cced4727e9f47619a83d1c2 = $(`<div id="html_0693d2a98cced4727e9f47619a83d1c2" style="width: 100.0%; height: 100.0%;">You are beside the Workshop, on a footpath. The ECE Block is 8 metres to the south; the Bio Centre is 16 metres to the east; the Amenities Block is 16 metres to the east.</div>`)[0];
+                popup_9c8cac1232f945f7164faadacb96f141.setContent(html_0693d2a98cced4727e9f47619a83d1c2);
+            
+        
+
+        circle_marker_32ace613569353c03dfdebc2353c64dc.bindPopup(popup_9c8cac1232f945f7164faadacb96f141)
+        ;
+
+        
+    
+    
+            var circle_marker_3b4dc66e928284cc51a36e604ece07d0 = L.circleMarker(
+                [13.325969535284841, 77.12462132850519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6b42f5ed7e2012918cf9864d90c284aa);
+        
+    
+        var popup_601600a8fb6d1e811f205db2cdc6116a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3bcb5b408a8b062036819de57b356d25 = $(`<div id="html_3bcb5b408a8b062036819de57b356d25" style="width: 100.0%; height: 100.0%;">You are beside the ECE Block. The Workshop is 11 metres to the north; the Bio Centre is 37 metres to the east; the Amenities Block is 39 metres to the east.</div>`)[0];
+                popup_601600a8fb6d1e811f205db2cdc6116a.setContent(html_3bcb5b408a8b062036819de57b356d25);
+            
+        
+
+        circle_marker_3b4dc66e928284cc51a36e604ece07d0.bindPopup(popup_601600a8fb6d1e811f205db2cdc6116a)
+        ;
+
+        
+    
+</script>
+</html>

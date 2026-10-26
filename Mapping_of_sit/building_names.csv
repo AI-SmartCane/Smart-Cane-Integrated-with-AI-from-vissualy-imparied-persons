@@ -1,0 +1,49 @@
+label,osm_id,area_m2,lat,lon,osm_name,new_name
+Birla Auditorium,1124811796,1449,13.32679,77.12664,Birla Auditorium,
+KC Library,1124811798,769,13.32720,77.12532,KC Library,
+Chemistry Block,1124818205,1013,13.32634,77.12645,Chemistry Block,
+Media Centre,1124818206,416,13.32575,77.12636,Media Centre,
+Civil Block,1124818211,1008,13.32643,77.12578,Civil Block,
+Dept. Of Electronics & Communication,1124830822,1208,13.32592,77.12459,Dept. Of Electronics & Communication,ECE Block
+Aminities,1124830823,666,13.32608,77.12520,Aminities,Amenities Block
+Bio Centre,1124830824,585,13.32585,77.12507,Bio Centre,
+Electrical Block,1124830825,6665,13.32679,77.12453,Electrical Block,
+Workshop,1124830826,1045,13.32615,77.12453,Workshop,
+MBA Block,1124901489,2530,13.33082,77.12764,MBA Block,
+#1,1124901494,439,13.32846,77.12667,,Alumni Guest House
+#2,1124901495,305,13.32939,77.12649,,
+#3,1124901496,487,13.32981,77.12658,,
+#4,1124901497,432,13.33034,77.12672,,
+Bio Plant,1124901498,2070,13.32546,77.12576,Bio Plant,
+SIT College Canteen,1124901499,479,13.32588,77.12699,SIT College Canteen,Canteen
+#5,1124901505,1289,13.32595,77.12765,,Alamprabhu Block
+#6,1124901506,4691,13.32520,77.12668,,Girls Hostel
+Glolden Jublie Building,416303282,884,13.32633,77.12532,Glolden Jublie Building,Golden Jubilee Building
+Bio Technology Block,416303283,1386,13.32739,77.12445,Bio Technology Block,
+Administration Block,416303380,1280,13.32691,77.12615,Administration Block,
+#7,417591767,87,13.32825,77.12610,,
+#8,417592027,211,13.32876,77.12617,,
+#9,418023717,131,13.32858,77.12615,,
+#10,418023759,107,13.33026,77.12654,,
+#11,418023899,163,13.32892,77.12621,,
+#12,418023938,133,13.32944,77.12634,,
+Computer Science Building,822311022,2015,13.32607,77.12647,Computer Science Building,
+#13,822311024,1478,13.32735,77.12390,,Stadium
+#14,rel6195347,3131,13.32617,77.12858,,BVB Hostel
+#15,drawn-2b0307,3250,13.32617,77.12930,,LBS Hostel
+#16,drawn-3ec7d1,1536,13.32654,77.12462,,Mechanical Department
+#17,drawn-fa3389,114,13.32665,77.12454,,Idea Lab
+A1 (pitch),1124811797,647,13.32686,77.12561,,Kho-Kho Court
+A2 (parking),1124818212,1382,13.32616,77.12577,,Computer Science and Civil department Parking
+A3 (parking),1124830814,836,13.32765,77.12518,,Near Coffe shop and Bank gate Parking
+A4 (parking),1124830815,189,13.32761,77.12596,,Near Bank Gate Parking
+A5 (parking),1124830816,255,13.32770,77.12397,,Stadium Parking
+A6 (parking),1124901490,821,13.33130,77.12745,,MBA Department Parking
+A7 (pitch),1124901493,949,13.32812,77.12663,,Temple
+Health Centre (area),1124901501,600,13.32608,77.12716,Health Centre,
+A8 (park),1124901504,5611,13.32643,77.12750,,
+A9 (pitch),822311021,1917,13.32780,77.12662,,BBC court
+Sri Shivakumara Swamiji Stadium (stadium),822311023,27312,13.32705,77.12302,Sri Shivakumara Swamiji Stadium,
+#17,drawn-875bad,23,13.32762,77.12572,,Karnataka Bank
+#18,drawn-a06f5a,22,13.32770,77.12453,,Back Gate
+#19,drawn-c2ba12,12,13.32765,77.12579,,Bank Gate
