@@ -1,0 +1,477 @@
+text,entity,start,end,label,canonical_location_reference
+please guide me to birla auditorium,birla auditorium,19,35,DESTINATION,birla auditorium
+i would like to visit birla auditorium,birla auditorium,22,38,DESTINATION,birla auditorium
+where can i find birla auditorium,birla auditorium,17,33,DESTINATION,birla auditorium
+what is the route to birla auditorium,birla auditorium,21,37,DESTINATION,birla auditorium
+please tell me how to reach the birla auditorium,the birla auditorium,28,48,DESTINATION,birla auditorium
+could you guide me towards the birla auditorium,the birla auditorium,27,47,DESTINATION,birla auditorium
+can you help me reach the birla auditorium,the birla auditorium,22,42,DESTINATION,birla auditorium
+i am trying to find the birla auditorium,the birla auditorium,20,40,DESTINATION,birla auditorium
+please show me the route to birla,birla,28,33,DESTINATION,birla auditorium
+i need directions to birla,birla,21,26,DESTINATION,birla auditorium
+i have to go to birla,birla,16,21,DESTINATION,birla auditorium
+i want to get to birla,birla,17,22,DESTINATION,birla auditorium
+please show me the route to kc library,kc library,28,38,DESTINATION,kc library
+i need directions to kc library,kc library,21,31,DESTINATION,kc library
+i have to go to kc library,kc library,16,26,DESTINATION,kc library
+i want to get to kc library,kc library,17,27,DESTINATION,kc library
+could you help me get to the kc library,the kc library,25,39,DESTINATION,kc library
+take me towards the kc library,the kc library,16,30,DESTINATION,kc library
+i am looking for the kc library,the kc library,17,31,DESTINATION,kc library
+how do i reach the kc library,the kc library,15,29,DESTINATION,kc library
+help me locate kc,kc,15,17,DESTINATION,kc library
+can you take me to kc,kc,19,21,DESTINATION,kc library
+show me the way to kc,kc,19,21,DESTINATION,kc library
+i need to visit kc,kc,16,18,DESTINATION,kc library
+help me locate chemistry block,chemistry block,15,30,DESTINATION,chemistry block
+can you take me to chemistry block,chemistry block,19,34,DESTINATION,chemistry block
+show me the way to chemistry block,chemistry block,19,34,DESTINATION,chemistry block
+i need to visit chemistry block,chemistry block,16,31,DESTINATION,chemistry block
+i would like to visit the chemistry block,the chemistry block,22,41,DESTINATION,chemistry block
+where can i find the chemistry block,the chemistry block,17,36,DESTINATION,chemistry block
+what is the route to the chemistry block,the chemistry block,21,40,DESTINATION,chemistry block
+please guide me to the chemistry block,the chemistry block,19,38,DESTINATION,chemistry block
+could you guide me towards chemistry department block,chemistry department block,27,53,DESTINATION,chemistry block
+can you help me reach chemistry department block,chemistry department block,22,48,DESTINATION,chemistry block
+i am trying to find chemistry department block,chemistry department block,20,46,DESTINATION,chemistry block
+please tell me how to reach chemistry department block,chemistry department block,28,54,DESTINATION,chemistry block
+could you guide me towards media centre,media centre,27,39,DESTINATION,media centre
+can you help me reach media centre,media centre,22,34,DESTINATION,media centre
+i am trying to find media centre,media centre,20,32,DESTINATION,media centre
+please tell me how to reach media centre,media centre,28,40,DESTINATION,media centre
+i need directions to the media centre,the media centre,21,37,DESTINATION,media centre
+i have to go to the media centre,the media centre,16,32,DESTINATION,media centre
+i want to get to the media centre,the media centre,17,33,DESTINATION,media centre
+please show me the route to the media centre,the media centre,28,44,DESTINATION,media centre
+take me towards college media centre,college media centre,16,36,DESTINATION,media centre
+i am looking for college media centre,college media centre,17,37,DESTINATION,media centre
+how do i reach college media centre,college media centre,15,35,DESTINATION,media centre
+could you help me get to college media centre,college media centre,25,45,DESTINATION,media centre
+take me towards civil block,civil block,16,27,DESTINATION,civil block
+i am looking for civil block,civil block,17,28,DESTINATION,civil block
+how do i reach civil block,civil block,15,26,DESTINATION,civil block
+could you help me get to civil block,civil block,25,36,DESTINATION,civil block
+can you take me to the civil block,the civil block,19,34,DESTINATION,civil block
+show me the way to the civil block,the civil block,19,34,DESTINATION,civil block
+i need to visit the civil block,the civil block,16,31,DESTINATION,civil block
+help me locate the civil block,the civil block,15,30,DESTINATION,civil block
+where can i find civil department block,civil department block,17,39,DESTINATION,civil block
+what is the route to civil department block,civil department block,21,43,DESTINATION,civil block
+please guide me to civil department block,civil department block,19,41,DESTINATION,civil block
+i would like to visit civil department block,civil department block,22,44,DESTINATION,civil block
+where can i find ece block,ece block,17,26,DESTINATION,ece block
+what is the route to ece block,ece block,21,30,DESTINATION,ece block
+please guide me to ece block,ece block,19,28,DESTINATION,ece block
+i would like to visit ece block,ece block,22,31,DESTINATION,ece block
+can you help me reach the ece block,the ece block,22,35,DESTINATION,ece block
+i am trying to find the ece block,the ece block,20,33,DESTINATION,ece block
+please tell me how to reach the ece block,the ece block,28,41,DESTINATION,ece block
+could you guide me towards the ece block,the ece block,27,40,DESTINATION,ece block
+i have to go to electronics and communication block,electronics and communication block,16,51,DESTINATION,ece block
+i want to get to electronics and communication block,electronics and communication block,17,52,DESTINATION,ece block
+please show me the route to electronics and communication block,electronics and communication block,28,63,DESTINATION,ece block
+i need directions to electronics and communication block,electronics and communication block,21,56,DESTINATION,ece block
+i am looking for electronics and communication department,electronics and communication department,17,57,DESTINATION,ece block
+how do i reach electronics and communication department,electronics and communication department,15,55,DESTINATION,ece block
+could you help me get to electronics and communication department,electronics and communication department,25,65,DESTINATION,ece block
+take me towards electronics and communication department,electronics and communication department,16,56,DESTINATION,ece block
+could you guide me towards amenities block,amenities block,27,42,DESTINATION,amenities block
+can you help me reach amenities block,amenities block,22,37,DESTINATION,amenities block
+i am trying to find amenities block,amenities block,20,35,DESTINATION,amenities block
+please tell me how to reach amenities block,amenities block,28,43,DESTINATION,amenities block
+i need directions to the amenities block,the amenities block,21,40,DESTINATION,amenities block
+i have to go to the amenities block,the amenities block,16,35,DESTINATION,amenities block
+i want to get to the amenities block,the amenities block,17,36,DESTINATION,amenities block
+please show me the route to the amenities block,the amenities block,28,47,DESTINATION,amenities block
+show me the way to bio centre,bio centre,19,29,DESTINATION,bio centre
+i need to visit bio centre,bio centre,16,26,DESTINATION,bio centre
+help me locate bio centre,bio centre,15,25,DESTINATION,bio centre
+can you take me to bio centre,bio centre,19,29,DESTINATION,bio centre
+what is the route to the bio centre,the bio centre,21,35,DESTINATION,bio centre
+please guide me to the bio centre,the bio centre,19,33,DESTINATION,bio centre
+i would like to visit the bio centre,the bio centre,22,36,DESTINATION,bio centre
+where can i find the bio centre,the bio centre,17,31,DESTINATION,bio centre
+i am trying to find biology centre,biology centre,20,34,DESTINATION,bio centre
+please tell me how to reach biology centre,biology centre,28,42,DESTINATION,bio centre
+could you guide me towards biology centre,biology centre,27,41,DESTINATION,bio centre
+can you help me reach biology centre,biology centre,22,36,DESTINATION,bio centre
+i am trying to find electrical block,electrical block,20,36,DESTINATION,electrical block
+please tell me how to reach electrical block,electrical block,28,44,DESTINATION,electrical block
+could you guide me towards electrical block,electrical block,27,43,DESTINATION,electrical block
+can you help me reach electrical block,electrical block,22,38,DESTINATION,electrical block
+i want to get to the electrical block,the electrical block,17,37,DESTINATION,electrical block
+please show me the route to the electrical block,the electrical block,28,48,DESTINATION,electrical block
+i need directions to the electrical block,the electrical block,21,41,DESTINATION,electrical block
+i have to go to the electrical block,the electrical block,16,36,DESTINATION,electrical block
+how do i reach electrical department block,electrical department block,15,42,DESTINATION,electrical block
+could you help me get to electrical department block,electrical department block,25,52,DESTINATION,electrical block
+take me towards electrical department block,electrical department block,16,43,DESTINATION,electrical block
+i am looking for electrical department block,electrical department block,17,44,DESTINATION,electrical block
+how do i reach workshop,workshop,15,23,DESTINATION,workshop
+could you help me get to workshop,workshop,25,33,DESTINATION,workshop
+take me towards workshop,workshop,16,24,DESTINATION,workshop
+i am looking for workshop,workshop,17,25,DESTINATION,workshop
+i need to visit the workshop,the workshop,16,28,DESTINATION,workshop
+help me locate the workshop,the workshop,15,27,DESTINATION,workshop
+can you take me to the workshop,the workshop,19,31,DESTINATION,workshop
+show me the way to the workshop,the workshop,19,31,DESTINATION,workshop
+please guide me to college workshop,college workshop,19,35,DESTINATION,workshop
+i would like to visit college workshop,college workshop,22,38,DESTINATION,workshop
+where can i find college workshop,college workshop,17,33,DESTINATION,workshop
+what is the route to college workshop,college workshop,21,37,DESTINATION,workshop
+please guide me to mba block,mba block,19,28,DESTINATION,mba block
+i would like to visit mba block,mba block,22,31,DESTINATION,mba block
+where can i find mba block,mba block,17,26,DESTINATION,mba block
+what is the route to mba block,mba block,21,30,DESTINATION,mba block
+please tell me how to reach the mba block,the mba block,28,41,DESTINATION,mba block
+could you guide me towards the mba block,the mba block,27,40,DESTINATION,mba block
+can you help me reach the mba block,the mba block,22,35,DESTINATION,mba block
+i am trying to find the mba block,the mba block,20,33,DESTINATION,mba block
+please show me the route to management studies block,management studies block,28,52,DESTINATION,mba block
+i need directions to management studies block,management studies block,21,45,DESTINATION,mba block
+i have to go to management studies block,management studies block,16,40,DESTINATION,mba block
+i want to get to management studies block,management studies block,17,41,DESTINATION,mba block
+please show me the route to alumni guest house,alumni guest house,28,46,DESTINATION,alumni guest house
+i need directions to alumni guest house,alumni guest house,21,39,DESTINATION,alumni guest house
+i have to go to alumni guest house,alumni guest house,16,34,DESTINATION,alumni guest house
+i want to get to alumni guest house,alumni guest house,17,35,DESTINATION,alumni guest house
+could you help me get to the alumni guest house,the alumni guest house,25,47,DESTINATION,alumni guest house
+take me towards the alumni guest house,the alumni guest house,16,38,DESTINATION,alumni guest house
+i am looking for the alumni guest house,the alumni guest house,17,39,DESTINATION,alumni guest house
+how do i reach the alumni guest house,the alumni guest house,15,37,DESTINATION,alumni guest house
+help me locate guest house for alumni,guest house for alumni,15,37,DESTINATION,alumni guest house
+can you take me to guest house for alumni,guest house for alumni,19,41,DESTINATION,alumni guest house
+show me the way to guest house for alumni,guest house for alumni,19,41,DESTINATION,alumni guest house
+i need to visit guest house for alumni,guest house for alumni,16,38,DESTINATION,alumni guest house
+help me locate bio plant,bio plant,15,24,DESTINATION,bio plant
+can you take me to bio plant,bio plant,19,28,DESTINATION,bio plant
+show me the way to bio plant,bio plant,19,28,DESTINATION,bio plant
+i need to visit bio plant,bio plant,16,25,DESTINATION,bio plant
+i would like to visit the bio plant,the bio plant,22,35,DESTINATION,bio plant
+where can i find the bio plant,the bio plant,17,30,DESTINATION,bio plant
+what is the route to the bio plant,the bio plant,21,34,DESTINATION,bio plant
+please guide me to the bio plant,the bio plant,19,32,DESTINATION,bio plant
+could you guide me towards biology plant,biology plant,27,40,DESTINATION,bio plant
+can you help me reach biology plant,biology plant,22,35,DESTINATION,bio plant
+i am trying to find biology plant,biology plant,20,33,DESTINATION,bio plant
+please tell me how to reach biology plant,biology plant,28,41,DESTINATION,bio plant
+could you guide me towards sit college canteen,sit college canteen,27,46,DESTINATION,canteen
+can you help me reach sit college canteen,sit college canteen,22,41,DESTINATION,canteen
+i am trying to find sit college canteen,sit college canteen,20,39,DESTINATION,canteen
+please tell me how to reach sit college canteen,sit college canteen,28,47,DESTINATION,canteen
+i need directions to college canteen,college canteen,21,36,DESTINATION,canteen
+i have to go to college canteen,college canteen,16,31,DESTINATION,canteen
+i want to get to college canteen,college canteen,17,32,DESTINATION,canteen
+please show me the route to college canteen,college canteen,28,43,DESTINATION,canteen
+take me towards the canteen,the canteen,16,27,DESTINATION,canteen
+i am looking for the canteen,the canteen,17,28,DESTINATION,canteen
+how do i reach the canteen,the canteen,15,26,DESTINATION,canteen
+could you help me get to the canteen,the canteen,25,36,DESTINATION,canteen
+can you take me to campus canteen,campus canteen,19,33,DESTINATION,canteen
+show me the way to campus canteen,campus canteen,19,33,DESTINATION,canteen
+i need to visit campus canteen,campus canteen,16,30,DESTINATION,canteen
+help me locate campus canteen,campus canteen,15,29,DESTINATION,canteen
+please show me the route to alamprabhu block,alamprabhu block,28,44,DESTINATION,alamprabhu block
+i need directions to alamprabhu block,alamprabhu block,21,37,DESTINATION,alamprabhu block
+i have to go to alamprabhu block,alamprabhu block,16,32,DESTINATION,alamprabhu block
+i want to get to alamprabhu block,alamprabhu block,17,33,DESTINATION,alamprabhu block
+could you help me get to the alamprabhu block,the alamprabhu block,25,45,DESTINATION,alamprabhu block
+take me towards the alamprabhu block,the alamprabhu block,16,36,DESTINATION,alamprabhu block
+i am looking for the alamprabhu block,the alamprabhu block,17,37,DESTINATION,alamprabhu block
+how do i reach the alamprabhu block,the alamprabhu block,15,35,DESTINATION,alamprabhu block
+where can i find girls hostel,girls hostel,17,29,DESTINATION,girls hostel
+what is the route to girls hostel,girls hostel,21,33,DESTINATION,girls hostel
+please guide me to girls hostel,girls hostel,19,31,DESTINATION,girls hostel
+i would like to visit girls hostel,girls hostel,22,34,DESTINATION,girls hostel
+can you help me reach the girls hostel,the girls hostel,22,38,DESTINATION,girls hostel
+i am trying to find the girls hostel,the girls hostel,20,36,DESTINATION,girls hostel
+please tell me how to reach the girls hostel,the girls hostel,28,44,DESTINATION,girls hostel
+could you guide me towards the girls hostel,the girls hostel,27,43,DESTINATION,girls hostel
+i have to go to women's hostel,women's hostel,16,30,DESTINATION,girls hostel
+i want to get to women's hostel,women's hostel,17,31,DESTINATION,girls hostel
+please show me the route to women's hostel,women's hostel,28,42,DESTINATION,girls hostel
+i need directions to women's hostel,women's hostel,21,35,DESTINATION,girls hostel
+i am looking for ladies hostel,ladies hostel,17,30,DESTINATION,girls hostel
+how do i reach ladies hostel,ladies hostel,15,28,DESTINATION,girls hostel
+could you help me get to ladies hostel,ladies hostel,25,38,DESTINATION,girls hostel
+take me towards ladies hostel,ladies hostel,16,29,DESTINATION,girls hostel
+could you guide me towards golden jubilee building,golden jubilee building,27,50,DESTINATION,golden jubilee building
+can you help me reach golden jubilee building,golden jubilee building,22,45,DESTINATION,golden jubilee building
+i am trying to find golden jubilee building,golden jubilee building,20,43,DESTINATION,golden jubilee building
+please tell me how to reach golden jubilee building,golden jubilee building,28,51,DESTINATION,golden jubilee building
+i need directions to the golden jubilee building,the golden jubilee building,21,48,DESTINATION,golden jubilee building
+i have to go to the golden jubilee building,the golden jubilee building,16,43,DESTINATION,golden jubilee building
+i want to get to the golden jubilee building,the golden jubilee building,17,44,DESTINATION,golden jubilee building
+please show me the route to the golden jubilee building,the golden jubilee building,28,55,DESTINATION,golden jubilee building
+take me towards golden jubilee block,golden jubilee block,16,36,DESTINATION,golden jubilee building
+i am looking for golden jubilee block,golden jubilee block,17,37,DESTINATION,golden jubilee building
+how do i reach golden jubilee block,golden jubilee block,15,35,DESTINATION,golden jubilee building
+could you help me get to golden jubilee block,golden jubilee block,25,45,DESTINATION,golden jubilee building
+take me towards biotechnology block,biotechnology block,16,35,DESTINATION,biotechnology block
+i am looking for biotechnology block,biotechnology block,17,36,DESTINATION,biotechnology block
+how do i reach biotechnology block,biotechnology block,15,34,DESTINATION,biotechnology block
+could you help me get to biotechnology block,biotechnology block,25,44,DESTINATION,biotechnology block
+can you take me to the biotechnology block,the biotechnology block,19,42,DESTINATION,biotechnology block
+show me the way to the biotechnology block,the biotechnology block,19,42,DESTINATION,biotechnology block
+i need to visit the biotechnology block,the biotechnology block,16,39,DESTINATION,biotechnology block
+help me locate the biotechnology block,the biotechnology block,15,38,DESTINATION,biotechnology block
+where can i find biotech block,biotech block,17,30,DESTINATION,biotechnology block
+what is the route to biotech block,biotech block,21,34,DESTINATION,biotechnology block
+please guide me to biotech block,biotech block,19,32,DESTINATION,biotechnology block
+i would like to visit biotech block,biotech block,22,35,DESTINATION,biotechnology block
+can you help me reach bio technology block,bio technology block,22,42,DESTINATION,biotechnology block
+i am trying to find bio technology block,bio technology block,20,40,DESTINATION,biotechnology block
+please tell me how to reach bio technology block,bio technology block,28,48,DESTINATION,biotechnology block
+could you guide me towards bio technology block,bio technology block,27,47,DESTINATION,biotechnology block
+help me locate administration block,administration block,15,35,DESTINATION,administration block
+can you take me to administration block,administration block,19,39,DESTINATION,administration block
+show me the way to administration block,administration block,19,39,DESTINATION,administration block
+i need to visit administration block,administration block,16,36,DESTINATION,administration block
+i would like to visit the administration block,the administration block,22,46,DESTINATION,administration block
+where can i find the administration block,the administration block,17,41,DESTINATION,administration block
+what is the route to the administration block,the administration block,21,45,DESTINATION,administration block
+please guide me to the administration block,the administration block,19,43,DESTINATION,administration block
+could you guide me towards administrative block,administrative block,27,47,DESTINATION,administration block
+can you help me reach administrative block,administrative block,22,42,DESTINATION,administration block
+i am trying to find administrative block,administrative block,20,40,DESTINATION,administration block
+please tell me how to reach administrative block,administrative block,28,48,DESTINATION,administration block
+i need directions to admin block,admin block,21,32,DESTINATION,administration block
+i have to go to admin block,admin block,16,27,DESTINATION,administration block
+i want to get to admin block,admin block,17,28,DESTINATION,administration block
+please show me the route to admin block,admin block,28,39,DESTINATION,administration block
+please guide me to computer science building,computer science building,19,44,DESTINATION,computer science building
+i would like to visit computer science building,computer science building,22,47,DESTINATION,computer science building
+where can i find computer science building,computer science building,17,42,DESTINATION,computer science building
+what is the route to computer science building,computer science building,21,46,DESTINATION,computer science building
+please tell me how to reach the computer science building,the computer science building,28,57,DESTINATION,computer science building
+could you guide me towards the computer science building,the computer science building,27,56,DESTINATION,computer science building
+can you help me reach the computer science building,the computer science building,22,51,DESTINATION,computer science building
+i am trying to find the computer science building,the computer science building,20,49,DESTINATION,computer science building
+please show me the route to computer science block,computer science block,28,50,DESTINATION,computer science building
+i need directions to computer science block,computer science block,21,43,DESTINATION,computer science building
+i have to go to computer science block,computer science block,16,38,DESTINATION,computer science building
+i want to get to computer science block,computer science block,17,39,DESTINATION,computer science building
+could you help me get to cse building,cse building,25,37,DESTINATION,computer science building
+take me towards cse building,cse building,16,28,DESTINATION,computer science building
+i am looking for cse building,cse building,17,29,DESTINATION,computer science building
+how do i reach cse building,cse building,15,27,DESTINATION,computer science building
+i am trying to find stadium,stadium,20,27,DESTINATION,stadium
+please tell me how to reach stadium,stadium,28,35,DESTINATION,stadium
+could you guide me towards stadium,stadium,27,34,DESTINATION,stadium
+can you help me reach stadium,stadium,22,29,DESTINATION,stadium
+i want to get to the stadium,the stadium,17,28,DESTINATION,stadium
+please show me the route to the stadium,the stadium,28,39,DESTINATION,stadium
+i need directions to the stadium,the stadium,21,32,DESTINATION,stadium
+i have to go to the stadium,the stadium,16,27,DESTINATION,stadium
+how do i reach college stadium,college stadium,15,30,DESTINATION,stadium
+could you help me get to college stadium,college stadium,25,40,DESTINATION,stadium
+take me towards college stadium,college stadium,16,31,DESTINATION,stadium
+i am looking for college stadium,college stadium,17,32,DESTINATION,stadium
+how do i reach bvb hostel,bvb hostel,15,25,DESTINATION,bvb hostel
+could you help me get to bvb hostel,bvb hostel,25,35,DESTINATION,bvb hostel
+take me towards bvb hostel,bvb hostel,16,26,DESTINATION,bvb hostel
+i am looking for bvb hostel,bvb hostel,17,27,DESTINATION,bvb hostel
+i need to visit the bvb hostel,the bvb hostel,16,30,DESTINATION,bvb hostel
+help me locate the bvb hostel,the bvb hostel,15,29,DESTINATION,bvb hostel
+can you take me to the bvb hostel,the bvb hostel,19,33,DESTINATION,bvb hostel
+show me the way to the bvb hostel,the bvb hostel,19,33,DESTINATION,bvb hostel
+could you guide me towards lbs hostel,lbs hostel,27,37,DESTINATION,lbs hostel
+can you help me reach lbs hostel,lbs hostel,22,32,DESTINATION,lbs hostel
+i am trying to find lbs hostel,lbs hostel,20,30,DESTINATION,lbs hostel
+please tell me how to reach lbs hostel,lbs hostel,28,38,DESTINATION,lbs hostel
+i need directions to the lbs hostel,the lbs hostel,21,35,DESTINATION,lbs hostel
+i have to go to the lbs hostel,the lbs hostel,16,30,DESTINATION,lbs hostel
+i want to get to the lbs hostel,the lbs hostel,17,31,DESTINATION,lbs hostel
+please show me the route to the lbs hostel,the lbs hostel,28,42,DESTINATION,lbs hostel
+show me the way to mechanical department,mechanical department,19,40,DESTINATION,mechanical department
+i need to visit mechanical department,mechanical department,16,37,DESTINATION,mechanical department
+help me locate mechanical department,mechanical department,15,36,DESTINATION,mechanical department
+can you take me to mechanical department,mechanical department,19,40,DESTINATION,mechanical department
+what is the route to the mechanical department,the mechanical department,21,46,DESTINATION,mechanical department
+please guide me to the mechanical department,the mechanical department,19,44,DESTINATION,mechanical department
+i would like to visit the mechanical department,the mechanical department,22,47,DESTINATION,mechanical department
+where can i find the mechanical department,the mechanical department,17,42,DESTINATION,mechanical department
+i am trying to find mechanical block,mechanical block,20,36,DESTINATION,mechanical department
+please tell me how to reach mechanical block,mechanical block,28,44,DESTINATION,mechanical department
+could you guide me towards mechanical block,mechanical block,27,43,DESTINATION,mechanical department
+can you help me reach mechanical block,mechanical block,22,38,DESTINATION,mechanical department
+i am trying to find kho-kho court,kho-kho court,20,33,DESTINATION,kho-kho court
+please tell me how to reach kho-kho court,kho-kho court,28,41,DESTINATION,kho-kho court
+could you guide me towards kho-kho court,kho-kho court,27,40,DESTINATION,kho-kho court
+can you help me reach kho-kho court,kho-kho court,22,35,DESTINATION,kho-kho court
+i want to get to the kho-kho court,the kho-kho court,17,34,DESTINATION,kho-kho court
+please show me the route to the kho-kho court,the kho-kho court,28,45,DESTINATION,kho-kho court
+i need directions to the kho-kho court,the kho-kho court,21,38,DESTINATION,kho-kho court
+i have to go to the kho-kho court,the kho-kho court,16,33,DESTINATION,kho-kho court
+how do i reach kho kho ground,kho kho ground,15,29,DESTINATION,kho-kho court
+could you help me get to kho kho ground,kho kho ground,25,39,DESTINATION,kho-kho court
+take me towards kho kho ground,kho kho ground,16,30,DESTINATION,kho-kho court
+i am looking for kho kho ground,kho kho ground,17,31,DESTINATION,kho-kho court
+how do i reach computer science and civil department parking,computer science and civil department parking,15,60,DESTINATION,computer science and civil department parking
+could you help me get to computer science and civil department parking,computer science and civil department parking,25,70,DESTINATION,computer science and civil department parking
+take me towards computer science and civil department parking,computer science and civil department parking,16,61,DESTINATION,computer science and civil department parking
+i am looking for computer science and civil department parking,computer science and civil department parking,17,62,DESTINATION,computer science and civil department parking
+i need to visit parking near the computer science and civil blocks,parking near the computer science and civil blocks,16,66,DESTINATION,computer science and civil department parking
+help me locate parking near the computer science and civil blocks,parking near the computer science and civil blocks,15,65,DESTINATION,computer science and civil department parking
+can you take me to parking near the computer science and civil blocks,parking near the computer science and civil blocks,19,69,DESTINATION,computer science and civil department parking
+show me the way to parking near the computer science and civil blocks,parking near the computer science and civil blocks,19,69,DESTINATION,computer science and civil department parking
+could you guide me towards parking near the coffee shop and bank gate,parking near the coffee shop and bank gate,27,69,DESTINATION,parking near coffee shop and bank gate
+can you help me reach parking near the coffee shop and bank gate,parking near the coffee shop and bank gate,22,64,DESTINATION,parking near coffee shop and bank gate
+i am trying to find parking near the coffee shop and bank gate,parking near the coffee shop and bank gate,20,62,DESTINATION,parking near coffee shop and bank gate
+please tell me how to reach parking near the coffee shop and bank gate,parking near the coffee shop and bank gate,28,70,DESTINATION,parking near coffee shop and bank gate
+i need directions to coffee shop and bank gate parking,coffee shop and bank gate parking,21,54,DESTINATION,parking near coffee shop and bank gate
+i have to go to coffee shop and bank gate parking,coffee shop and bank gate parking,16,49,DESTINATION,parking near coffee shop and bank gate
+i want to get to coffee shop and bank gate parking,coffee shop and bank gate parking,17,50,DESTINATION,parking near coffee shop and bank gate
+please show me the route to coffee shop and bank gate parking,coffee shop and bank gate parking,28,61,DESTINATION,parking near coffee shop and bank gate
+show me the way to bank gate parking,bank gate parking,19,36,DESTINATION,bank gate parking
+i need to visit bank gate parking,bank gate parking,16,33,DESTINATION,bank gate parking
+help me locate bank gate parking,bank gate parking,15,32,DESTINATION,bank gate parking
+can you take me to bank gate parking,bank gate parking,19,36,DESTINATION,bank gate parking
+what is the route to parking near bank gate,parking near bank gate,21,43,DESTINATION,bank gate parking
+please guide me to parking near bank gate,parking near bank gate,19,41,DESTINATION,bank gate parking
+i would like to visit parking near bank gate,parking near bank gate,22,44,DESTINATION,bank gate parking
+where can i find parking near bank gate,parking near bank gate,17,39,DESTINATION,bank gate parking
+please show me the route to stadium parking,stadium parking,28,43,DESTINATION,stadium parking
+i need directions to stadium parking,stadium parking,21,36,DESTINATION,stadium parking
+i have to go to stadium parking,stadium parking,16,31,DESTINATION,stadium parking
+i want to get to stadium parking,stadium parking,17,32,DESTINATION,stadium parking
+could you help me get to parking near the stadium,parking near the stadium,25,49,DESTINATION,stadium parking
+take me towards parking near the stadium,parking near the stadium,16,40,DESTINATION,stadium parking
+i am looking for parking near the stadium,parking near the stadium,17,41,DESTINATION,stadium parking
+how do i reach parking near the stadium,parking near the stadium,15,39,DESTINATION,stadium parking
+where can i find mba department parking,mba department parking,17,39,DESTINATION,mba department parking
+what is the route to mba department parking,mba department parking,21,43,DESTINATION,mba department parking
+please guide me to mba department parking,mba department parking,19,41,DESTINATION,mba department parking
+i would like to visit mba department parking,mba department parking,22,44,DESTINATION,mba department parking
+can you help me reach parking near the mba department,parking near the mba department,22,53,DESTINATION,mba department parking
+i am trying to find parking near the mba department,parking near the mba department,20,51,DESTINATION,mba department parking
+please tell me how to reach parking near the mba department,parking near the mba department,28,59,DESTINATION,mba department parking
+could you guide me towards parking near the mba department,parking near the mba department,27,58,DESTINATION,mba department parking
+how do i reach temple,temple,15,21,DESTINATION,temple
+could you help me get to temple,temple,25,31,DESTINATION,temple
+take me towards temple,temple,16,22,DESTINATION,temple
+i am looking for temple,temple,17,23,DESTINATION,temple
+i need to visit the temple,the temple,16,26,DESTINATION,temple
+help me locate the temple,the temple,15,25,DESTINATION,temple
+can you take me to the temple,the temple,19,29,DESTINATION,temple
+show me the way to the temple,the temple,19,29,DESTINATION,temple
+please guide me to campus temple,campus temple,19,32,DESTINATION,temple
+i would like to visit campus temple,campus temple,22,35,DESTINATION,temple
+where can i find campus temple,campus temple,17,30,DESTINATION,temple
+what is the route to campus temple,campus temple,21,34,DESTINATION,temple
+please guide me to health centre,health centre,19,32,DESTINATION,health centre
+i would like to visit health centre,health centre,22,35,DESTINATION,health centre
+where can i find health centre,health centre,17,30,DESTINATION,health centre
+what is the route to health centre,health centre,21,34,DESTINATION,health centre
+please tell me how to reach the health centre,the health centre,28,45,DESTINATION,health centre
+could you guide me towards the health centre,the health centre,27,44,DESTINATION,health centre
+can you help me reach the health centre,the health centre,22,39,DESTINATION,health centre
+i am trying to find the health centre,the health centre,20,37,DESTINATION,health centre
+please show me the route to campus health centre,campus health centre,28,48,DESTINATION,health centre
+i need directions to campus health centre,campus health centre,21,41,DESTINATION,health centre
+i have to go to campus health centre,campus health centre,16,36,DESTINATION,health centre
+i want to get to campus health centre,campus health centre,17,37,DESTINATION,health centre
+could you help me get to medical centre on campus,medical centre on campus,25,49,DESTINATION,health centre
+take me towards medical centre on campus,medical centre on campus,16,40,DESTINATION,health centre
+i am looking for medical centre on campus,medical centre on campus,17,41,DESTINATION,health centre
+how do i reach medical centre on campus,medical centre on campus,15,39,DESTINATION,health centre
+i am trying to find bbc court,bbc court,20,29,DESTINATION,bbc court
+please tell me how to reach bbc court,bbc court,28,37,DESTINATION,bbc court
+could you guide me towards bbc court,bbc court,27,36,DESTINATION,bbc court
+can you help me reach bbc court,bbc court,22,31,DESTINATION,bbc court
+i want to get to the bbc court,the bbc court,17,30,DESTINATION,bbc court
+please show me the route to the bbc court,the bbc court,28,41,DESTINATION,bbc court
+i need directions to the bbc court,the bbc court,21,34,DESTINATION,bbc court
+i have to go to the bbc court,the bbc court,16,29,DESTINATION,bbc court
+how do i reach bbc sports court,bbc sports court,15,31,DESTINATION,bbc court
+could you help me get to bbc sports court,bbc sports court,25,41,DESTINATION,bbc court
+take me towards bbc sports court,bbc sports court,16,32,DESTINATION,bbc court
+i am looking for bbc sports court,bbc sports court,17,33,DESTINATION,bbc court
+how do i reach sri shivakumara swamiji stadium,sri shivakumara swamiji stadium,15,46,DESTINATION,sri shivakumara swamiji stadium
+could you help me get to sri shivakumara swamiji stadium,sri shivakumara swamiji stadium,25,56,DESTINATION,sri shivakumara swamiji stadium
+take me towards sri shivakumara swamiji stadium,sri shivakumara swamiji stadium,16,47,DESTINATION,sri shivakumara swamiji stadium
+i am looking for sri shivakumara swamiji stadium,sri shivakumara swamiji stadium,17,48,DESTINATION,sri shivakumara swamiji stadium
+i need to visit the sri shivakumara swamiji stadium,the sri shivakumara swamiji stadium,16,51,DESTINATION,sri shivakumara swamiji stadium
+help me locate the sri shivakumara swamiji stadium,the sri shivakumara swamiji stadium,15,50,DESTINATION,sri shivakumara swamiji stadium
+can you take me to the sri shivakumara swamiji stadium,the sri shivakumara swamiji stadium,19,54,DESTINATION,sri shivakumara swamiji stadium
+show me the way to the sri shivakumara swamiji stadium,the sri shivakumara swamiji stadium,19,54,DESTINATION,sri shivakumara swamiji stadium
+please guide me to shivakumara swamiji stadium,shivakumara swamiji stadium,19,46,DESTINATION,sri shivakumara swamiji stadium
+i would like to visit shivakumara swamiji stadium,shivakumara swamiji stadium,22,49,DESTINATION,sri shivakumara swamiji stadium
+where can i find shivakumara swamiji stadium,shivakumara swamiji stadium,17,44,DESTINATION,sri shivakumara swamiji stadium
+what is the route to shivakumara swamiji stadium,shivakumara swamiji stadium,21,48,DESTINATION,sri shivakumara swamiji stadium
+please guide me to karnataka bank,karnataka bank,19,33,DESTINATION,karnataka bank
+i would like to visit karnataka bank,karnataka bank,22,36,DESTINATION,karnataka bank
+where can i find karnataka bank,karnataka bank,17,31,DESTINATION,karnataka bank
+what is the route to karnataka bank,karnataka bank,21,35,DESTINATION,karnataka bank
+please tell me how to reach the karnataka bank,the karnataka bank,28,46,DESTINATION,karnataka bank
+could you guide me towards the karnataka bank,the karnataka bank,27,45,DESTINATION,karnataka bank
+can you help me reach the karnataka bank,the karnataka bank,22,40,DESTINATION,karnataka bank
+i am trying to find the karnataka bank,the karnataka bank,20,38,DESTINATION,karnataka bank
+take me towards back gate,back gate,16,25,DESTINATION,back gate
+i am looking for back gate,back gate,17,26,DESTINATION,back gate
+how do i reach back gate,back gate,15,24,DESTINATION,back gate
+could you help me get to back gate,back gate,25,34,DESTINATION,back gate
+can you take me to the back gate,the back gate,19,32,DESTINATION,back gate
+show me the way to the back gate,the back gate,19,32,DESTINATION,back gate
+i need to visit the back gate,the back gate,16,29,DESTINATION,back gate
+help me locate the back gate,the back gate,15,28,DESTINATION,back gate
+where can i find rear gate,rear gate,17,26,DESTINATION,back gate
+what is the route to rear gate,rear gate,21,30,DESTINATION,back gate
+please guide me to rear gate,rear gate,19,28,DESTINATION,back gate
+i would like to visit rear gate,rear gate,22,31,DESTINATION,back gate
+where can i find bank gate,bank gate,17,26,DESTINATION,bank gate
+what is the route to bank gate,bank gate,21,30,DESTINATION,bank gate
+please guide me to bank gate,bank gate,19,28,DESTINATION,bank gate
+i would like to visit bank gate,bank gate,22,31,DESTINATION,bank gate
+can you help me reach the bank gate,the bank gate,22,35,DESTINATION,bank gate
+i am trying to find the bank gate,the bank gate,20,33,DESTINATION,bank gate
+please tell me how to reach the bank gate,the bank gate,28,41,DESTINATION,bank gate
+could you guide me towards the bank gate,the bank gate,27,40,DESTINATION,bank gate
+i am standing outside and need to get to the chemistry block,the chemistry block,41,60,DESTINATION,chemistry block
+my next class is in the ece block so please guide me there,the ece block,20,33,DESTINATION,ece block
+i have an appointment at the health centre,the health centre,25,42,DESTINATION,health centre
+my friend is waiting at the alumni guest house,the alumni guest house,24,46,DESTINATION,alumni guest house
+i need to collect a book from kc library,kc library,30,40,DESTINATION,kc library
+the event is happening at birla auditorium,birla auditorium,26,42,DESTINATION,birla auditorium
+i have practical work at the workshop,the workshop,25,37,DESTINATION,workshop
+my destination is the golden jubilee building,the golden jubilee building,18,45,DESTINATION,golden jubilee building
+please drop me outside the girls hostel,the girls hostel,23,39,DESTINATION,girls hostel
+i need to visit the computer science building today,the computer science building,16,45,DESTINATION,computer science building
+i am going for lunch at the college canteen,the college canteen,24,43,DESTINATION,canteen
+please take me through the back gate,the back gate,23,36,DESTINATION,back gate
+i need to go to the bank gate,the bank gate,16,29,DESTINATION,bank gate
+the meeting is in the mba block,the mba block,18,31,DESTINATION,mba block
+i want to practice at the kho-kho court,the kho-kho court,22,39,DESTINATION,kho-kho court
+please take me to the civil department block,the civil department block,18,44,DESTINATION,civil block
+i am searching for the media centre,the media centre,19,35,DESTINATION,media centre
+i need to go to the electrical department block,the electrical department block,16,47,DESTINATION,electrical block
+what time does the college library close,,-1,-1,O_ONLY,
+i have a lecture tomorrow morning,,-1,-1,O_ONLY,
+please call my project teammate,,-1,-1,O_ONLY,
+i am feeling tired today,,-1,-1,O_ONLY,
+what is the weather like,,-1,-1,O_ONLY,
+i need help charging my phone,,-1,-1,O_ONLY,
+tell me about the electronics course,,-1,-1,O_ONLY,
+when does the next class start,,-1,-1,O_ONLY,
+i want to drink some water,,-1,-1,O_ONLY,
+can you explain how this sensor works,,-1,-1,O_ONLY,
+i have submitted my assignment,,-1,-1,O_ONLY,
+please read the notice aloud,,-1,-1,O_ONLY,
+what is the distance between two points,,-1,-1,O_ONLY,
+i am waiting for my friend,,-1,-1,O_ONLY,
+the lecture was very interesting,,-1,-1,O_ONLY,
+how does a neural network learn,,-1,-1,O_ONLY,
+please increase the volume,,-1,-1,O_ONLY,
+i want to listen to music,,-1,-1,O_ONLY,
+is it raining outside,,-1,-1,O_ONLY,
+what day is it today,,-1,-1,O_ONLY,
+i need to check my timetable,,-1,-1,O_ONLY,
+please describe the object in front of me,,-1,-1,O_ONLY,
+i cannot recognise the person speaking,,-1,-1,O_ONLY,
+how many classes do i have today,,-1,-1,O_ONLY,
+my phone battery is low,,-1,-1,O_ONLY,
+please repeat the last sentence,,-1,-1,O_ONLY,
+i am not asking for directions,,-1,-1,O_ONLY,
+what are the college examination dates,,-1,-1,O_ONLY,
+can you tell me a joke,,-1,-1,O_ONLY,
+i need to send a message to my friend,,-1,-1,O_ONLY,
