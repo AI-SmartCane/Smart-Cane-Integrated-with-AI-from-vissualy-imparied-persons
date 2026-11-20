@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Edge Vision Assistive Guidance Cane for the Visually Impaired</title>
+    <meta
+      name="description"
+      content="A student Mini Project from the Department of Electronics and Communication Engineering, Siddaganga Institute of Technology, Tumakuru (2026–27): a walking cane designed to use a camera, a distance sensor and a Raspberry Pi 5 to detect obstacles and guide the user through audio and vibration feedback."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="An Edge Vision Assistive Guidance Cane for the Visually Impaired"
+    />
+    <meta
+      property="og:description"
+      content="SIT ECE Mini Project, 2026–27: a walking cane designed to detect obstacles on the device and guide the user through audio and vibration feedback."
+    />
+    <meta property="og:url" content="https://naskenai.github.io/edge-vision-guidance-cane/" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="An Edge Vision Assistive Guidance Cane for the Visually Impaired"
+    />
+    <meta
+      name="twitter:description"
+      content="SIT ECE Mini Project, 2026–27: a walking cane designed to detect obstacles on the device and guide the user through audio and vibration feedback."
+    />
+
+    <script>
+      // Apply a saved theme before the first paint. With nothing saved, no class is set and
+      // the prefers-color-scheme rule in src/index.css applies.
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark" || theme === "light") document.documentElement.classList.add(theme);
+      } catch (e) {
+        // Storage unavailable: follow the operating system setting.
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

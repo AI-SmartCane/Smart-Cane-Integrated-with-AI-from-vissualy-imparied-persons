@@ -1,0 +1,133 @@
+@import "@fontsource/atkinson-hyperlegible/400.css";
+@import "@fontsource/atkinson-hyperlegible/700.css";
+@import "tailwindcss";
+
+/*
+  Colour tokens. Every text/background pairing is checked for WCAG contrast by
+  scripts/check-contrast.mjs, which reads the values from this file. Keep them as hex.
+*/
+
+/* light */
+:root {
+  --canvas: #ffffff;
+  --surface: #f5f5f3;
+  --ink: #1a1a1a;
+  --muted: #474747;
+  --line: #d6d6d6;
+  --control: #767676;
+  --accent: #d80000;
+  --accent-ink: #ffffff;
+  --header: #d80000;
+  --header-ink: #ffffff;
+  --focus: #1a1a1a;
+  color-scheme: light;
+}
+
+/* dark */
+:root.dark {
+  --canvas: #121212;
+  --surface: #1e1e1e;
+  --ink: #f2f2f2;
+  --muted: #c2c2c2;
+  --line: #3a3a3a;
+  --control: #8f8f8f;
+  --accent: #ff7070;
+  --accent-ink: #121212;
+  --header: #a80000;
+  --header-ink: #ffffff;
+  --focus: #f2f2f2;
+  color-scheme: dark;
+}
+
+/* Without JavaScript, follow the operating system setting. */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light):not(.dark) {
+    --canvas: #121212;
+    --surface: #1e1e1e;
+    --ink: #f2f2f2;
+    --muted: #c2c2c2;
+    --line: #3a3a3a;
+    --control: #8f8f8f;
+    --accent: #ff7070;
+    --accent-ink: #121212;
+    --header: #a80000;
+    --header-ink: #ffffff;
+    --focus: #f2f2f2;
+    color-scheme: dark;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-control: var(--control);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-header: var(--header);
+  --color-header-ink: var(--header-ink);
+  --font-sans: "Atkinson Hyperlegible", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    /* Keeps headings and focused elements clear of the sticky navigation bar. */
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 1.125rem; /* 18 px */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.25;
+    font-weight: 700;
+    text-wrap: balance;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration-line: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+  }
+
+  a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  /* One visible focus style for every interactive element. */
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
