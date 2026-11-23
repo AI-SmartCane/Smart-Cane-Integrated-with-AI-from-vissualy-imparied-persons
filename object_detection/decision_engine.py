@@ -13,7 +13,7 @@ NAVIGATION_OBJECTS = {
     "cat"
 }
 
-CONFIDENCE_THRESHOLD = 0.40
+CONFIDENCE_THRESHOLD = 0.85
 
 
 def decide(detections, frame_width, frame_height):
